@@ -460,9 +460,20 @@ export default function Home() {
               {/* viewBox="0 0 100 100" */}
 
               <div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0">
-                {/* Blob 1 - small, centered */}
+                {/* Blob 1 - small */}
                 <motion.svg
                   className="absolute"
+                  animate={{
+                    x: [0, 80, -60, 40, 0],
+                    y: [0, -50, 70, -30, 0],
+                    rotate: [0, 15, -10, 5, 0],
+                  }}
+                  transition={{
+                    duration: 20,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   width="600"
@@ -482,13 +493,25 @@ export default function Home() {
                   />
                 </motion.svg>
 
-                {/* Blob 2 - medium, centered */}
+                {/* Blob 2 - medium */}
                 <motion.svg
                   className="absolute"
+                  animate={{
+                    x: [0, -100, 60, -40, 0],
+                    y: [0, 60, -80, 50, 0],
+                    rotate: [0, -20, 12, -8, 0],
+                    scale: [1, 0.85, 0.9, 0.8, 1],
+                  }}
+                  transition={{
+                    duration: 25,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="1200"
-                  height="1200"
+                  width="900"
+                  height="900"
                   viewBox="-50 -50 100 100"
                 >
                   <motion.path
@@ -504,13 +527,25 @@ export default function Home() {
                   />
                 </motion.svg>
 
-                {/* Blob 3 - large, centered */}
+                {/* Blob 3 - large */}
                 <motion.svg
                   className="absolute"
+                  animate={{
+                    x: [0, 120, -90, 70, 0],
+                    y: [0, -70, 40, -60, 0],
+                    rotate: [0, 10, -15, 8, 0],
+                    scale: [1, 0.8, 0.85, 0.75, 1],
+                  }}
+                  transition={{
+                    duration: 30,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="1800"
-                  height="1800"
+                  width="1200"
+                  height="1200"
                   viewBox="-50 -50 100 100"
                 >
                   <motion.path

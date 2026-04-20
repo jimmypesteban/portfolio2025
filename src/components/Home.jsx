@@ -405,7 +405,7 @@ export default function Home() {
         <div className="">
           <div className="font-pfFont2 text-pcWhite">
             <div className="relative w-full h-[calc(100vh-100px)]">
-              <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10">
+              <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference">
                 Hello I'm {authorData.name}, a UI/UX Designer
                 <p className="md:text-[24px] text-[20px] px-[24px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">
                   Worked in startup industries such as <br></br>{" "}
@@ -463,7 +463,6 @@ export default function Home() {
                 {/* Blob 1 - small, centered */}
                 <motion.svg
                   className="absolute"
-                  style={{ mixBlendMode: "difference" }}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   width="600"
@@ -486,7 +485,6 @@ export default function Home() {
                 {/* Blob 2 - medium, centered */}
                 <motion.svg
                   className="absolute"
-                  style={{ mixBlendMode: "difference" }}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1200"
@@ -509,7 +507,6 @@ export default function Home() {
                 {/* Blob 3 - large, centered */}
                 <motion.svg
                   className="absolute"
-                  style={{ mixBlendMode: "difference" }}
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   width="1800"

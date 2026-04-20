@@ -478,7 +478,7 @@ export default function Home() {
                     scale: [1, 0.9, 0.95, 0.85, 1],
                   }}
                   transition={{
-                    duration: 20,
+                    duration: 45,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "reverse",
@@ -493,7 +493,7 @@ export default function Home() {
                   <motion.path
                     animate={{ d: blobKeyframes1 }}
                     transition={{
-                      duration: 14,
+                      duration: 35,
                       ease: "easeInOut",
                       repeat: Infinity,
                       repeatType: "reverse",
@@ -514,7 +514,7 @@ export default function Home() {
                     scale: [1, 0.85, 0.9, 0.8, 1],
                   }}
                   transition={{
-                    duration: 25,
+                    duration: 55,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "reverse",
@@ -529,7 +529,7 @@ export default function Home() {
                   <motion.path
                     animate={{ d: blobKeyframes2 }}
                     transition={{
-                      duration: 18,
+                      duration: 45,
                       ease: "easeInOut",
                       repeat: Infinity,
                       repeatType: "reverse",
@@ -550,7 +550,7 @@ export default function Home() {
                     scale: [1, 0.8, 0.85, 0.75, 1],
                   }}
                   transition={{
-                    duration: 30,
+                    duration: 65,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "reverse",
@@ -565,7 +565,7 @@ export default function Home() {
                   <motion.path
                     animate={{ d: blobKeyframes3 }}
                     transition={{
-                      duration: 22,
+                      duration: 55,
                       ease: "easeInOut",
                       repeat: Infinity,
                       repeatType: "reverse",

@@ -199,6 +199,14 @@ export default function Home() {
   const blobKeyframes2 = useRef(generateBlobKeyframes(8, 38)).current;
   const blobKeyframes3 = useRef(generateBlobKeyframes(8, 42)).current;
 
+  // Random duration between base*3.5 and base*7.5
+  const randDuration = (base) => base * (3.5 + Math.random() * 4);
+  const blobDurations = useRef({
+    drift1: randDuration(6),  morph1: randDuration(4),
+    drift2: randDuration(7),  morph2: randDuration(5),
+    drift3: randDuration(8),  morph3: randDuration(6),
+  }).current;
+
   const ellipseBox = {
     initial: {
       maxheight: "100vh",
@@ -478,7 +486,7 @@ export default function Home() {
                     scale: [1, 0.9, 0.95, 0.85, 1],
                   }}
                   transition={{
-                    duration: 45,
+                    duration: blobDurations.drift1,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "reverse",
@@ -493,7 +501,7 @@ export default function Home() {
                   <motion.path
                     animate={{ d: blobKeyframes1 }}
                     transition={{
-                      duration: 35,
+                      duration: blobDurations.morph1,
                       ease: "easeInOut",
                       repeat: Infinity,
                       repeatType: "reverse",
@@ -514,7 +522,7 @@ export default function Home() {
                     scale: [1, 0.85, 0.9, 0.8, 1],
                   }}
                   transition={{
-                    duration: 55,
+                    duration: blobDurations.drift2,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "reverse",
@@ -529,7 +537,7 @@ export default function Home() {
                   <motion.path
                     animate={{ d: blobKeyframes2 }}
                     transition={{
-                      duration: 45,
+                      duration: blobDurations.morph2,
                       ease: "easeInOut",
                       repeat: Infinity,
                       repeatType: "reverse",
@@ -550,7 +558,7 @@ export default function Home() {
                     scale: [1, 0.8, 0.85, 0.75, 1],
                   }}
                   transition={{
-                    duration: 65,
+                    duration: blobDurations.drift3,
                     ease: "easeInOut",
                     repeat: Infinity,
                     repeatType: "reverse",
@@ -565,7 +573,7 @@ export default function Home() {
                   <motion.path
                     animate={{ d: blobKeyframes3 }}
                     transition={{
-                      duration: 55,
+                      duration: blobDurations.morph3,
                       ease: "easeInOut",
                       repeat: Infinity,
                       repeatType: "reverse",

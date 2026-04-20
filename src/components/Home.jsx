@@ -397,14 +397,15 @@ export default function Home() {
   return (
     <>
       <div
-        className="bg-repeat"
+        className="bg-repeat bg-fixed"
         style={{
           backgroundImage:`url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
+          backgroundAttachment: "fixed",
         }}
       >
         <div className="">
           <div className="font-pfFont2 text-pcWhite">
-            <div className="relative w-full h-[calc(100vh-100px)]">
+            <div className="relative w-full h-[calc(100vh-100px)] overflow-hidden">
               <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference">
                 Hello I'm {authorData.name}, a UI/UX Designer
                 <p className="md:text-[24px] text-[20px] px-[24px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">

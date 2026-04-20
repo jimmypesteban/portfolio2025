@@ -14,7 +14,7 @@ export const authorData = {
           _key: "ed50af9ec5f50",
           _type: "span",
           marks: [],
-          text: "Dynamic Product Designer with 5+ years of experience in fast-paced startups, specializing in Fintech, multimedia, education tech, and IT consultancy. Adept at collaborating with cross-functional teams to drive design from concept to execution and leveraging user research to create impactful experiences that enhance user satisfaction and business growth.",
+          text: "UX and product design professional with 5+ years of experience leading interface design, user experience improvement, and implementation-ready design delivery. Recently expanded into a design-to-code workflow using AI tools to move efficiently from Figma into production, bridging the gap between design and engineering while owning quality from concept to release.",
         },
       ],
       markDefs: [],

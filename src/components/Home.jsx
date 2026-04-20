@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 import { animate, motion } from "framer-motion";
@@ -163,6 +163,42 @@ export default function Home() {
     },
   };
 
+  // Generate random blob SVG path
+  const generateBlobPath = (size = 40) => {
+    const points = 8;
+    const slice = (Math.PI * 2) / points;
+    let d = "";
+    const pts = [];
+    for (let i = 0; i < points; i++) {
+      const angle = slice * i;
+      const r = size * (0.7 + Math.random() * 0.6);
+      pts.push({ x: Math.cos(angle) * r, y: Math.sin(angle) * r });
+    }
+    // Build smooth cubic bezier path
+    for (let i = 0; i < pts.length; i++) {
+      const curr = pts[i];
+      const next = pts[(i + 1) % pts.length];
+      const prev = pts[(i - 1 + pts.length) % pts.length];
+      const cp1x = curr.x + (next.x - prev.x) * 0.25;
+      const cp1y = curr.y + (next.y - prev.y) * 0.25;
+      const nextPrev = pts[i];
+      const nextNext = pts[(i + 2) % pts.length];
+      const cp2x = next.x - (nextNext.x - nextPrev.x) * 0.25;
+      const cp2y = next.y - (nextNext.y - nextPrev.y) * 0.25;
+      if (i === 0) d += `M${curr.x.toFixed(1)},${curr.y.toFixed(1)} `;
+      d += `C${cp1x.toFixed(1)},${cp1y.toFixed(1)} ${cp2x.toFixed(1)},${cp2y.toFixed(1)} ${next.x.toFixed(1)},${next.y.toFixed(1)} `;
+    }
+    return d + "Z";
+  };
+
+  const generateBlobKeyframes = (count = 6, size = 40) => {
+    return Array.from({ length: count }, () => generateBlobPath(size));
+  };
+
+  const blobKeyframes1 = useRef(generateBlobKeyframes(8, 40)).current;
+  const blobKeyframes2 = useRef(generateBlobKeyframes(8, 38)).current;
+  const blobKeyframes3 = useRef(generateBlobKeyframes(8, 42)).current;
+
   const ellipseBox = {
     initial: {
       maxheight: "100vh",
@@ -174,7 +210,7 @@ export default function Home() {
     },
   };
 
-  const ellipseVariants3 = {
+  const _ellipseVariants3_unused = {
     d: "M24.7,-35.5C31.1,-29.3,34.9,-20.9,36.6,-12.6C38.3,-4.3,38.1,4,35.9,11.9C33.6,19.8,29.4,27.3,23.1,31.5C16.8,35.7,8.4,36.6,0.2,36.3C-8,36.1,-16,34.6,-23.1,30.6C-30.2,26.7,-36.4,20.2,-38.9,12.6C-41.4,5,-40.3,-3.9,-38,-12.8C-35.7,-21.7,-32.2,-30.6,-25.7,-36.7C-19.1,-42.9,-9.6,-46.2,-0.2,-45.9C9.1,-45.6,18.2,-41.6,24.7,-35.5Z",
     animate: {
       d: [
@@ -423,84 +459,76 @@ export default function Home() {
 
               {/* viewBox="0 0 100 100" */}
 
-              <motion.div
-                className="absolute mix-blend-difference max-w-full overflow-x-hidden z-0"
-                initial="start"
-                animate="end"
-                variants={ellipseBox}
-              >
-                <div className="absolute top-[-4%] left-[-8%] lg:left-[35%] xl:left-[40%]">
-                  <motion.svg
-                    initial="start"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1080"
-                    height="1080"
-                    viewBox="-80 -80 200 200"
-                    animate="end"
-                  >
-                    <motion.path
-                      variants={ellipseVariants}
-                      transition={{
-                        duration: 12,
-                        ease: [0.87, 0, 0.13, 1],
-                        yoyo: Infinity,
-                        repeat: Infinity,
-                      }}
-                      stroke-width="1"
-                      stroke="White"
-                    />
-                  </motion.svg>
-                </div>
+              <div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0">
+                {/* Blob 1 - small, centered */}
+                <motion.svg
+                  className="absolute"
+                  style={{ mixBlendMode: "difference" }}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="600"
+                  height="600"
+                  viewBox="-50 -50 100 100"
+                >
+                  <motion.path
+                    animate={{ d: blobKeyframes1 }}
+                    transition={{
+                      duration: 14,
+                      ease: "easeInOut",
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    }}
+                    strokeWidth="0.8"
+                    stroke="white"
+                  />
+                </motion.svg>
 
-                <div className="absolute left-[8%] lg:left-[10%] xl:left-[-2%]">
-                  <motion.svg
-                    initial="start"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2400"
-                    height="2400"
-                    viewBox="-60 -20 135 135"
-                    animate="end"
-                  >
-                    <motion.path
-                      variants={ellipseVariants}
-                      transition={{
-                        duration: 12,
-                        ease: [0.87, 0, 0.13, 1],
-                        yoyo: Infinity,
-                        repeat: Infinity,
-                      }}
-                      stroke-width=".2"
-                      stroke="White"
-                    />
-                  </motion.svg>
-                </div>
+                {/* Blob 2 - medium, centered */}
+                <motion.svg
+                  className="absolute"
+                  style={{ mixBlendMode: "difference" }}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1200"
+                  height="1200"
+                  viewBox="-50 -50 100 100"
+                >
+                  <motion.path
+                    animate={{ d: blobKeyframes2 }}
+                    transition={{
+                      duration: 18,
+                      ease: "easeInOut",
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    }}
+                    strokeWidth="0.3"
+                    stroke="white"
+                  />
+                </motion.svg>
 
-                <div className="relative left-[-20%] lg:left-[0] ">
-                  <motion.svg
-                    initial="start"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2400"
-                    height="2400"
-                    viewBox="30 -30 150 150"
-                    animate="end"
-                  >
-                    <motion.path
-                      variants={ellipseVariants}
-                      transition={{
-                        duration: 12,
-                        ease: [0.87, 0, 0.13, 1],
-                        yoyo: Infinity,
-                        repeat: Infinity,
-                      }}
-                      stroke-width=".2"
-                      stroke="White"
-                    />
-                  </motion.svg>
-                </div>
-              </motion.div>
+                {/* Blob 3 - large, centered */}
+                <motion.svg
+                  className="absolute"
+                  style={{ mixBlendMode: "difference" }}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1800"
+                  height="1800"
+                  viewBox="-50 -50 100 100"
+                >
+                  <motion.path
+                    animate={{ d: blobKeyframes3 }}
+                    transition={{
+                      duration: 22,
+                      ease: "easeInOut",
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    }}
+                    strokeWidth="0.15"
+                    stroke="white"
+                  />
+                </motion.svg>
+              </div>
 
               {/* {authorData.homeBanner !== null && (
               <div className="">
@@ -518,7 +546,7 @@ export default function Home() {
         <div className="mt-[-240px] md:mt-0  lg:pt-12 2xl:px-[320px] lg:px-[80px] px-[16px]">
           <div className="lg:columns-2 sm:columns-1 gap-10">
             <div className="flex flex-wrap justify-center items-center min-h-[320px]  mb-10 ">
-              <div className="relative mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[96px] text-[64px] text-Black font-bold font-pfFont2 text-center drop-shadow-[0_0.8px_0.8px_rgba(255,255,255,1)]  mix-blend-difference">
+              <div className="relative mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[96px] text-[64px] text-Black font-bold font-pfFont2 text-center drop-shadow-[0_0.4px_0.4px_#fff]  mix-blend-difference">
                 Selected Works
               </div>
               <div className="absolute mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[48px] text-[32px] font-bold text-pcWhite font-pfFont2 text-center">

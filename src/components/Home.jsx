@@ -504,11 +504,11 @@ export default function Home() {
                 </motion.svg>
                 </div>
 
-                {/* Blob 2 - medium, bottom center */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
+                {/* Blob 2 - medium, centered */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <motion.svg
                   animate={{
-                    x: [0, -100, 60, -40, 0],
+                    x: [0, -250, 200, -180, 0],
                     y: [0, 60, -80, 50, 0],
                     rotate: [0, -20, 12, -8, 0],
                     scale: [1, 0.85, 0.9, 0.8, 1],
@@ -540,11 +540,11 @@ export default function Home() {
                 </motion.svg>
                 </div>
 
-                {/* Blob 3 - large, top center */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2">
+                {/* Blob 3 - large, centered */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <motion.svg
                   animate={{
-                    x: [0, 120, -90, 70, 0],
+                    x: [0, 300, -280, 220, 0],
                     y: [0, -70, 40, -60, 0],
                     rotate: [0, 10, -15, 8, 0],
                     scale: [1, 0.8, 0.85, 0.75, 1],

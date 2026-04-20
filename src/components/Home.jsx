@@ -516,7 +516,7 @@ export default function Home() {
         </div>
 
         <div className="mt-[-240px] md:mt-0  lg:pt-12 2xl:px-[320px] lg:px-[80px] px-[16px]">
-          <div className="gap-10">
+          <div className="lg:columns-2 sm:columns-1 gap-10">
             <div className="flex flex-wrap justify-center items-center min-h-[320px]  mb-10 ">
               <div className="relative mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[96px] text-[64px] text-Black font-bold font-pfFont2 text-center drop-shadow-[0_0.8px_0.8px_rgba(255,255,255,1)]  mix-blend-difference">
                 Selected Works
@@ -526,31 +526,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="">
               {projectData &&
-                projectData.map((projectData, index) => {
-                  // Mobile: date order (array order) 0-5
-                  // Desktop 2-col (grid L→R per row):
-                  //   Row 1: Plangora(1) left,  Edtech(0) right
-                  //   Row 2: Hotel(3) left,     Neuromatics(2) right
-                  //   Row 3: Melon(5) left,     Datago(4) right
-                  const lgOrderClasses = [
-                    "lg:order-2", // 0: Edtech → right col row 1
-                    "lg:order-1", // 1: Plangora → left col row 1
-                    "lg:order-4", // 2: Neuromatics → right col row 2
-                    "lg:order-3", // 3: Hotel → left col row 2
-                    "lg:order-6", // 4: Datago → right col row 3
-                    "lg:order-5", // 5: Melon → left col row 3
-                  ];
-                  return (
+                projectData.map((projectData, index) => (
                   <div
-                    className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] ${lgOrderClasses[index] || ""}`}
+                    className="md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden mb-10 break-inside-avoid"
                     key={index}
                   >
                     <div className="relative">
                       <img
                         alt={projectData.projectHomeBanner.asset.url}
-                        className="md:h-full object-cover rounded-t-[16px] h-[620px]"
+                        className="md:h-full object-cover h-[620px] w-full"
                         src={projectData.projectHomeBanner.asset.url}
                       />
                       <div className="absolute top-0 w-full md:min-h-[640px] p-6 md:p-12 rounded-[8px]">
@@ -651,8 +637,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  );
-                })}
+                ))}
             </div>
           </div>
         </div>

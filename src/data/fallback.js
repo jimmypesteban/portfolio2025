@@ -37,8 +37,8 @@ export const authorData = {
   },
   resume: {
     asset: {
-      _id: "file-24b8dd0afd0262aa45267feb8b46fba46bc61ad3-pdf",
-      url: "https://cdn.sanity.io/files/7vv89ze2/production/24b8dd0afd0262aa45267feb8b46fba46bc61ad3.pdf",
+      _id: "local-resume-2026",
+      url: "/EstebanJimmyPosadasCV2026.pdf",
     },
   },
   recommendationLetter: {

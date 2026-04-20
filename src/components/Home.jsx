@@ -407,15 +407,20 @@ export default function Home() {
         <div className="">
           <div className="font-pfFont2 text-pcWhite">
             <div className="relative w-full h-[calc(100vh-100px)] overflow-hidden">
-              <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference">
-                Hello I'm {authorData.name}, a UI/UX Designer
-                <p className="md:text-[24px] text-[20px] px-[24px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">
-                  Worked in startup industries such as <br></br>{" "}
-                  <strong>Fintech</strong>, <strong>Edutech</strong>, <strong>IT Consultancy</strong>, and{" "}
-                  <strong>Multimedia</strong> companies. 
+              <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference px-[16px] md:px-[40px]">
+                <span className="bg-pcBlack px-3 py-1 box-decoration-clone" style={{ boxDecorationBreak: "clone" }}>
+                  Hello I'm {authorData.name}, a UI/UX Designer
+                </span>
+                <p className="md:text-[24px] text-[20px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">
+                  <span className="bg-pcBlack px-3 py-1 box-decoration-clone" style={{ boxDecorationBreak: "clone" }}>
+                    Worked in startup industries such as{" "}
+                    <strong>Fintech</strong>, <strong>Edutech</strong>, <strong>IT Consultancy</strong>, and{" "}
+                    <strong>Multimedia</strong> companies.
+                  </span>
                 </p>
                 <div>
                   <p className="text-[20px] font-pfFont z-0">
+                    <span className="bg-pcBlack px-3 py-1 box-decoration-clone" style={{ boxDecorationBreak: "clone" }}>
                     {authorData.resume !== null && (
                       <a
                         className="font-normal text-pcWhite relative underline duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[8px] after:absolute after:duration-300 hover:after:w-full hover:no-underline"
@@ -436,6 +441,7 @@ export default function Home() {
                         Recommendation Letter
                       </a>
                     )}
+                    </span>
                   </p>
                 </div>
               </div>

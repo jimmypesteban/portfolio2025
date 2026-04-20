@@ -459,7 +459,7 @@ export default function Home() {
 
               {/* viewBox="0 0 100 100" */}
 
-              <div className="absolute inset-0 flex items-center justify-center overflow-hidden z-0">
+              <div className="absolute inset-0 flex items-center justify-center z-0">
                 {/* Blob 1 - small */}
                 <motion.svg
                   className="absolute"
@@ -467,6 +467,7 @@ export default function Home() {
                     x: [0, 80, -60, 40, 0],
                     y: [0, -50, 70, -30, 0],
                     rotate: [0, 15, -10, 5, 0],
+                    scale: [1, 0.9, 0.95, 0.85, 1],
                   }}
                   transition={{
                     duration: 20,
@@ -479,6 +480,7 @@ export default function Home() {
                   width="600"
                   height="600"
                   viewBox="-50 -50 100 100"
+                  overflow="visible"
                 >
                   <motion.path
                     animate={{ d: blobKeyframes1 }}
@@ -488,7 +490,7 @@ export default function Home() {
                       repeat: Infinity,
                       repeatType: "reverse",
                     }}
-                    strokeWidth="0.8"
+                    strokeWidth="0.17"
                     stroke="white"
                   />
                 </motion.svg>
@@ -513,6 +515,7 @@ export default function Home() {
                   width="900"
                   height="900"
                   viewBox="-50 -50 100 100"
+                  overflow="visible"
                 >
                   <motion.path
                     animate={{ d: blobKeyframes2 }}
@@ -522,7 +525,7 @@ export default function Home() {
                       repeat: Infinity,
                       repeatType: "reverse",
                     }}
-                    strokeWidth="0.3"
+                    strokeWidth="0.11"
                     stroke="white"
                   />
                 </motion.svg>
@@ -547,6 +550,7 @@ export default function Home() {
                   width="1200"
                   height="1200"
                   viewBox="-50 -50 100 100"
+                  overflow="visible"
                 >
                   <motion.path
                     animate={{ d: blobKeyframes3 }}
@@ -556,7 +560,7 @@ export default function Home() {
                       repeat: Infinity,
                       repeatType: "reverse",
                     }}
-                    strokeWidth="0.15"
+                    strokeWidth="0.08"
                     stroke="white"
                   />
                 </motion.svg>

@@ -407,7 +407,7 @@ export default function Home() {
         <div className="">
           <div className="font-pfFont2 text-pcWhite">
             <div className="relative w-full h-[calc(100vh-100px)] overflow-hidden">
-              <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference" style={{ WebkitTextStroke: "2px #191919", paintOrder: "stroke fill" }}>
+              <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference" style={{ WebkitTextStroke: "2px #191919" }}>
                 Hello I'm {authorData.name}, a UI/UX Designer
                 <p className="md:text-[24px] text-[20px] px-[24px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">
                   Worked in startup industries such as <br></br>{" "}

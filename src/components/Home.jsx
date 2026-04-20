@@ -504,8 +504,8 @@ export default function Home() {
                 </motion.svg>
                 </div>
 
-                {/* Blob 2 - medium, bottom-left */}
-                <div className="absolute bottom-0 left-0">
+                {/* Blob 2 - medium, bottom center */}
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
                 <motion.svg
                   animate={{
                     x: [0, -100, 60, -40, 0],
@@ -540,8 +540,8 @@ export default function Home() {
                 </motion.svg>
                 </div>
 
-                {/* Blob 3 - large, top-right */}
-                <div className="absolute top-0 right-0">
+                {/* Blob 3 - large, top center */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2">
                 <motion.svg
                   animate={{
                     x: [0, 120, -90, 70, 0],

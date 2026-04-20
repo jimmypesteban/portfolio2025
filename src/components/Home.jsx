@@ -459,10 +459,10 @@ export default function Home() {
 
               {/* viewBox="0 0 100 100" */}
 
-              <div className="absolute inset-0 flex items-center justify-center z-0">
-                {/* Blob 1 - small */}
+              <div className="absolute inset-0 z-0">
+                {/* Blob 1 - small, centered */}
+                <div className="absolute inset-0 flex items-center justify-center">
                 <motion.svg
-                  className="absolute"
                   animate={{
                     x: [0, 80, -60, 40, 0],
                     y: [0, -50, 70, -30, 0],
@@ -494,10 +494,11 @@ export default function Home() {
                     stroke="white"
                   />
                 </motion.svg>
+                </div>
 
-                {/* Blob 2 - medium */}
+                {/* Blob 2 - medium, bottom-left */}
+                <div className="absolute bottom-0 left-0">
                 <motion.svg
-                  className="absolute"
                   animate={{
                     x: [0, -100, 60, -40, 0],
                     y: [0, 60, -80, 50, 0],
@@ -529,10 +530,11 @@ export default function Home() {
                     stroke="white"
                   />
                 </motion.svg>
+                </div>
 
-                {/* Blob 3 - large */}
+                {/* Blob 3 - large, top-right */}
+                <div className="absolute top-0 right-0">
                 <motion.svg
-                  className="absolute"
                   animate={{
                     x: [0, 120, -90, 70, 0],
                     y: [0, -70, 40, -60, 0],
@@ -564,6 +566,7 @@ export default function Home() {
                     stroke="white"
                   />
                 </motion.svg>
+                </div>
               </div>
 
               {/* {authorData.homeBanner !== null && (

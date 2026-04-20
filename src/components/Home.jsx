@@ -396,17 +396,19 @@ export default function Home() {
   console.log(projectData);
   return (
     <>
-      <div
-        className="bg-repeat bg-fixed"
-        style={{
-          backgroundImage:`url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <div className="relative">
+        <div
+          className="fixed inset-0 bg-repeat -z-10"
+          style={{
+            backgroundImage:`url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
+          }}
+        />
+
         <div className="">
           <div className="font-pfFont2 text-pcWhite">
             <div className="relative w-full h-[calc(100vh-100px)] overflow-hidden">
               <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 mix-blend-difference">
+                <div className="inline-block bg-pcBlack/80 backdrop-blur-sm rounded-[16px] px-6 md:px-12 py-8 md:py-12">
                 Hello I'm {authorData.name}, a UI/UX Designer
                 <p className="md:text-[24px] text-[20px] px-[24px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">
                   Worked in startup industries such as <br></br>{" "}
@@ -436,6 +438,7 @@ export default function Home() {
                       </a>
                     )}
                   </p>
+                </div>
                 </div>
               </div>
               {/* <motion.div

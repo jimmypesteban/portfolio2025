@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { authorData as fallbackNavAuthor } from "../data/fallback";
 
 export default function NavBar() {
   const [isOpen, setOpen] = useState(false);
@@ -41,8 +42,10 @@ export default function NavBar() {
               bio, 
         }`
       )
-      .then((data) => setAuthorData(data[0]))
-      .catch(console.error);
+      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackNavAuthor))
+      .catch(() => {
+        setAuthorData(fallbackNavAuthor);
+      });
   }, []);
 
   if (!authorData) {
@@ -51,7 +54,7 @@ export default function NavBar() {
 
   console.log(authorData);
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <motion.div className="px-[24px] md:px-[36px] 2xl:px-[320px] lg:px-[80px] flex flex-wrap justify-between items-center mx-auto py-8 text-[18px] font-pfFont2 font-semibold bg-pcBlack">
         <div className="z-50">
           <a href="/" className="flex items-center">

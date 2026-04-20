@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 import { AnimatePresence, motion } from "framer-motion";
+import { galleryData as fallbackGallery } from "../data/fallback";
 
 export default function Graphics() {
   const [GraphicsData, setGraphicsData] = useState(null);
@@ -17,8 +18,10 @@ export default function Graphics() {
           imageContentURL,
         }`
       )
-      .then((data) => setGraphicsData(data))
-      .catch(console.error);
+      .then((data) => setGraphicsData(data && data.length > 0 ? data : fallbackGallery))
+      .catch(() => {
+        setGraphicsData(fallbackGallery);
+      });
   }, []);
 
   console.log(GraphicsData);

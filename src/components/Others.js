@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 import { AnimatePresence, motion } from "framer-motion";
+import { allProjects as fallbackAllProjects } from "../data/fallback";
 
 export default function Others() {
   const [projectData, setProjectData] = useState(null);
@@ -26,8 +27,10 @@ export default function Others() {
           publishedAt
         }`
       )
-      .then((data) => setProjectData(data))
-      .catch(console.error);
+      .then((data) => setProjectData(data && data.length > 0 ? data : fallbackAllProjects))
+      .catch(() => {
+        setProjectData(fallbackAllProjects);
+      });
   }, []);
 
   if (!projectData) {

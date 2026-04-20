@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 import { AnimatePresence, motion } from "framer-motion";
+import { allProjects as fallbackAllProjects, personalProjects as fallbackPersonalProjects } from "../data/fallback";
 
 export default function Projects() {
   const [projectData, setProjectData] = useState(null);
@@ -87,10 +88,11 @@ export default function Projects() {
         }`
       )
       .then((data) => {
-        setProjectData(data);
-        console.log("asjkdhkjashkdjhk", projectData);
+        setProjectData(data && data.length > 0 ? data : fallbackAllProjects);
       })
-      .catch(console.error);
+      .catch(() => {
+        setProjectData(fallbackAllProjects);
+      });
   }, []);
 
   useEffect(() => {
@@ -122,10 +124,11 @@ export default function Projects() {
         }`
       )
       .then((data) => {
-        setProjectPersonalData(data);
-        console.log("projectPersonalData:", projectPersonalData);
+        setProjectPersonalData(data && data.length > 0 ? data : fallbackPersonalProjects);
       })
-      .catch(console.error);
+      .catch(() => {
+        setProjectPersonalData(fallbackPersonalProjects);
+      });
   }, []);
 
   if (!projectData || loading === true) {
@@ -171,7 +174,7 @@ export default function Projects() {
           backgroundImage:`url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
         }}
       >
-      <section className="2xl:mx-[290px] mx-[40px]">
+      <section className="2xl:mx-[290px] mx-[16px] md:mx-[40px]">
         <h1 className="lg:text-[40px] text-[28px] text-pcWhite font-pfFont2 font-bold text-center mb-2 lg:pt-16">
           Archive
         </h1>
@@ -179,7 +182,7 @@ export default function Projects() {
           Here are some more works.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
               <motion.div
@@ -197,7 +200,7 @@ export default function Projects() {
                 }}
               >
                 <div
-                  className="bg-pcBlack min-h-[480px] rounded-[8px] transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,255,255,1)] shadow-[0_0_8px_rgba(255,255,255,0.12)]"
+                  className="bg-pcBlack h-full rounded-[8px] transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,255,255,1)] shadow-[0_0_8px_rgba(255,255,255,0.12)] flex flex-col"
                   key={index}
                 >
                   <div className="text-white">
@@ -262,7 +265,7 @@ export default function Projects() {
         <h1 className="lg:text-[40px] text-[28px] text-pcWhite font-pfFont2 font-bold text-center mt-16 mb-2">
           Personal / Course Projects
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 pt-8 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 pb-12">
           {projectPersonalData &&
             projectPersonalData.map((project, index) => (
               <motion.div
@@ -280,7 +283,7 @@ export default function Projects() {
                 }}
               >
                 <div
-                  className="bg-pcBlack min-h-[480px] rounded-[8px] transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,255,255,1)] shadow-[0_0_8px_rgba(255,255,255,0.12)]"
+                  className="bg-pcBlack h-full rounded-[8px] transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,255,255,1)] shadow-[0_0_8px_rgba(255,255,255,0.12)] flex flex-col"
                   key={index}
                 >
                   <div className="text-white">

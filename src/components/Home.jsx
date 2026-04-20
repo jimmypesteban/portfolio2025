@@ -2,6 +2,118 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 import { animate, motion } from "framer-motion";
+import { authorData as fallbackAuthor, homepageProjects as fallbackProjects } from "../data/fallback";
+
+const _oldInlineProjects = [
+  {
+    title: "Plangora Academy",
+    headline: "Some Headline 3-5 Words.",
+    role: "Creative Designer",
+    brief: "The education unit of Plangora Limited.",
+    duration: "Nov 2022 - Dec 2022",
+    projectTitleColor: "#4DB852",
+    projectTagsColor: "#C2F4C2",
+    projectButtonColor: "#38863B",
+    extraColor1: "#FFFFFF",
+    extraColor2: "#212121",
+    slug: { _type: "slug", current: "plangora-academy" },
+    liveSite: null,
+    externalLink: "https://www.behance.net/gallery/169294123/Plangora-Academy",
+    projectHomeBanner: { alt: null, asset: { url: "https://cdn.sanity.io/images/7vv89ze2/production/89e5d87b88c01ff2938d9adda064472601ff7248-3840x4320.png" } },
+    projectTags: ["Brand Design", "Illustration", "Web Design", "App Design", "Motion Graphic", "Print Design", "School"],
+    publishedAt: null,
+  },
+  {
+    title: "DatagoTech",
+    headline: "Some Headline 3-5 Words.",
+    role: "UX/UI Designer",
+    brief: "A financial news risk management with the use of AI and NLP technology.",
+    duration: "October 2020 - May 2021",
+    projectTitleColor: "#EDF3FF",
+    projectTagsColor: "#EDF3FF",
+    projectButtonColor: "#8DCAFF",
+    extraColor1: "#333333",
+    extraColor2: "#EDF3FF",
+    slug: { _type: "slug", current: "datagotech" },
+    liveSite: "https://www.datagotech.cn/portal",
+    externalLink: null,
+    projectHomeBanner: { alt: null, asset: { url: "https://cdn.sanity.io/images/7vv89ze2/production/f05c276129879d423e8779e4c44f2a0e1d551ebf-3840x4320.png" } },
+    projectTags: ["UI Design", "UX Design", "Design System", "Risk Management"],
+    publishedAt: null,
+  },
+  {
+    title: "Hotel Group App",
+    headline: "Some Headline 3-5 Words.",
+    role: "UI/IxD Designer",
+    brief: "A Contactless Travel app for Hotel guests.",
+    duration: "January 2022",
+    projectTitleColor: "#E7E4E0",
+    projectTagsColor: "#F4F4F4",
+    projectButtonColor: "#FBF8F4",
+    extraColor1: "#252525",
+    extraColor2: "#F4F4F4",
+    slug: { _type: "slug", current: "hotel-group-app" },
+    liveSite: null,
+    externalLink: "https://www.behance.net/gallery/163100653/Hotel-Group-App-%28Proposal%29",
+    projectHomeBanner: { alt: null, asset: { url: "https://cdn.sanity.io/images/7vv89ze2/production/22658e895c3c6d9e4b173da59783f1242bb7a340-3840x4320.png" } },
+    projectTags: ["UI Design", "App Design", "Hotel"],
+    publishedAt: null,
+  },
+  {
+    title: "Edtech - NDA (WIP!!!) ",
+    headline: "Some Headline 3-5 Words.",
+    role: "UI/UX Designer",
+    brief: "Making learning fun!",
+    duration: "August 2023 - Present",
+    projectTitleColor: "#BB104E",
+    projectTagsColor: "#F4DFDF",
+    projectButtonColor: "#850B37",
+    extraColor1: "#FFFFFF",
+    extraColor2: null,
+    slug: null,
+    liveSite: null,
+    externalLink: "https://jpesteban.webflow.io/",
+    projectHomeBanner: { alt: null, asset: { url: "https://cdn.sanity.io/images/7vv89ze2/production/c27dcb3c5b716989498a10eb8f4a4edfe5d289fd-3840x4320.png" } },
+    projectTags: ["EdTech", "UX Design", "UI Design", "Amplitude"],
+    publishedAt: null,
+  },
+  {
+    title: "Neuromatics (Trials)",
+    headline: "Some Headline 3-5 Words.",
+    role: "UX/UI Designer",
+    brief: "A place to setup medical trials to participants by doctors.",
+    duration: "June 2022 - Dec 2022",
+    projectTitleColor: "#842DB7",
+    projectTagsColor: "#F4E9F7",
+    projectButtonColor: "#44106B",
+    extraColor1: "#F4E9F7",
+    extraColor2: "#262626",
+    slug: { _type: "slug", current: "neuromatics-trials" },
+    liveSite: null,
+    externalLink: "https://jimmypesteban.com/projects/neuromatics-trials",
+    projectHomeBanner: { alt: null, asset: { url: "https://cdn.sanity.io/images/7vv89ze2/production/4aee96f18540d6c4cede00e9000d4121bd6376f7-3840x4320.png" } },
+    projectTags: ["UI Design", "UX Design", "Design System", "Medical Trial"],
+    publishedAt: null,
+  },
+  {
+    title: "Melon Project ",
+    headline: null,
+    role: "UI/UX Designer, Logo Designer",
+    brief: "A website for online publishing, social news aggregation, and discussions.",
+    duration: "October 2020 - December 2020",
+    projectTitleColor: "#E34362",
+    projectTagsColor: "#FF8F94",
+    projectButtonColor: "#B9364F",
+    extraColor1: "#FFFFFF",
+    extraColor2: "#333333",
+    slug: { _type: "slug", current: "melon-project" },
+    liveSite: "https://www.datagotech.cn/portal",
+    externalLink: null,
+    projectHomeBanner: { alt: null, asset: { url: "https://cdn.sanity.io/images/7vv89ze2/production/15dfac37e3520ba27faf56a862beb2e47a41348d-3840x4320.png" } },
+    projectTags: ["UI Design", "Styleguide", "Social Platform"],
+    publishedAt: null,
+  },
+];
 
 export default function Home() {
   const [authorData, setAuthorData] = useState(null);
@@ -163,9 +275,11 @@ export default function Home() {
         }`
       )
       .then((data) => {
-        setProjectData(data);
+        setProjectData(data && data.length > 0 ? data : fallbackProjects);
       })
-      .catch(console.error);
+      .catch(() => {
+        setProjectData(fallbackProjects);
+      });
 
     return () => {
       clearTimeout();
@@ -200,8 +314,10 @@ export default function Home() {
               },
         }`
       )
-      .then((data) => setAuthorData(data[0]))
-      .catch(console.error);
+      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackAuthor))
+      .catch(() => {
+        setAuthorData(fallbackAuthor);
+      });
   }, []);
 
   if (!authorData || loading === true) {
@@ -400,7 +516,7 @@ export default function Home() {
         </div>
 
         <div className="mt-[-240px] md:mt-0  lg:pt-12 2xl:px-[320px] lg:px-[80px] px-[16px]">
-          <div className="lg:columns-2 sm:columns-1 gap-10">
+          <div className="gap-10">
             <div className="flex flex-wrap justify-center items-center min-h-[320px]  mb-10 ">
               <div className="relative mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[96px] text-[64px] text-Black font-bold font-pfFont2 text-center drop-shadow-[0_0.8px_0.8px_rgba(255,255,255,1)]  mix-blend-difference">
                 Selected Works
@@ -410,17 +526,31 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               {projectData &&
-                projectData.map((projectData, index) => (
+                projectData.map((projectData, index) => {
+                  // Mobile: date order (array order) 0-5
+                  // Desktop 2-col (grid L→R per row):
+                  //   Row 1: Plangora(1) left,  Edtech(0) right
+                  //   Row 2: Hotel(3) left,     Neuromatics(2) right
+                  //   Row 3: Melon(5) left,     Datago(4) right
+                  const lgOrderClasses = [
+                    "lg:order-2", // 0: Edtech → right col row 1
+                    "lg:order-1", // 1: Plangora → left col row 1
+                    "lg:order-4", // 2: Neuromatics → right col row 2
+                    "lg:order-3", // 3: Hotel → left col row 2
+                    "lg:order-6", // 4: Datago → right col row 3
+                    "lg:order-5", // 5: Melon → left col row 3
+                  ];
+                  return (
                   <div
-                    className="md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)]"
+                    className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] ${lgOrderClasses[index] || ""}`}
                     key={index}
                   >
                     <div className="relative">
                       <img
                         alt={projectData.projectHomeBanner.asset.url}
-                        className="md:h-full object-cover rounded-[8px] mt-8 h-[620px]"
+                        className="md:h-full object-cover rounded-t-[16px] h-[620px]"
                         src={projectData.projectHomeBanner.asset.url}
                       />
                       <div className="absolute top-0 w-full md:min-h-[640px] p-6 md:p-12 rounded-[8px]">
@@ -431,19 +561,19 @@ export default function Home() {
 
                         <p
                           className="text-[16px] font-semibold"
-                          style={{ color: `${projectData.extraColor2}` }}
+                          style={{ color: projectData.extraColor2 || "#333333" }}
                         >
                           {projectData.duration}
                         </p>
                         <h1
                           className="font-extrabold md:text-[36px] text-[24px] font-pfFont2"
-                          style={{ color: `${projectData.projectTitleColor}` }}
+                          style={{ color: projectData.projectTitleColor || "#333333" }}
                         >
                           {projectData.title}
                         </h1>
                         <p
                           className="text-[16px] md:text-[20px] font-semibold mb-2"
-                          style={{ color: `${projectData.extraColor2}` }}
+                          style={{ color: projectData.extraColor2 || "#333333" }}
                         >
                           {projectData.role}
                         </p>
@@ -465,7 +595,7 @@ export default function Home() {
 
                         <p
                           className="md:text-[16px] font-medium font-pfFont mb-2 md:mb-5"
-                          style={{ color: `${projectData.extraColor2}` }}
+                          style={{ color: projectData.extraColor2 || "#333333" }}
                         >
                           {projectData.brief}
                         </p>
@@ -521,7 +651,8 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
             </div>
           </div>
         </div>

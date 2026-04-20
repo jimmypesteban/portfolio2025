@@ -8,6 +8,7 @@ import Others from './components/Others';
 import SinglePost from "./components/SinglePost";
 import SingleProject from "./components/SingleProject";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path="/Projects/:slug" element={<SingleProject/>} />
         </Routes>
         <Footer/>
-        
+        <BackToTop/>
       </Router>
     </div>
   );

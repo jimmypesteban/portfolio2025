@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import { motion } from "framer-motion";
+import { authorData as fallbackAuthor } from "../data/fallback";
 
 export default function AboutMe() {
   const [authorData, setAuthorData] = useState(null);
@@ -74,8 +75,10 @@ export default function AboutMe() {
               },
         }`
       )
-      .then((data) => setAuthorData(data[0]))
-      .catch(console.error);
+      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackAuthor))
+      .catch(() => {
+        setAuthorData(fallbackAuthor);
+      });
   }, []);
 
   if (!authorData || loading === true) {
@@ -187,7 +190,7 @@ export default function AboutMe() {
                 {authorData.skillsContent &&
                   authorData.skillsContent.map((skillsContent, id) => (
                     <div
-                      className="text-pcWhite font-semibold px-2 md:px-4 py-4 rounded-[8px] border-2 border-pcWhite text-center hover:shadow-[0_0_16px_rgba(255,255,255,0.56)] shadow-[0_0_16px_rgba(255,255,255,0.24)] hover:bg-pcWhite/10"
+                      className="text-pcWhite font-semibold px-2 md:px-4 py-4 rounded-[8px] border-2 border-pcWhite text-center hover:shadow-[0_0_16px_rgba(255,255,255,0.56)] shadow-[0_0_16px_rgba(255,255,255,0.24)] hover:bg-pcWhite/10 flex items-center justify-center"
                       key={id}
                     >
                       {skillsContent}
@@ -213,13 +216,19 @@ export default function AboutMe() {
 
                         <h3 className="text-lg text-pcGray font-pfFont2 text-[32px] font-medium pt-4">
                           {experience.roleTitle},{" "}
-                          <span className="text-pcWhite underline font-bold relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[10px] after:absolute after:duration-300 hover:after:w-full hover:no-underline">
-                            <a href={experience.titleLink}>
+                          {experience.titleLink ? (
+                            <span className="text-pcWhite underline font-bold relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[10px] after:absolute after:duration-300 hover:after:w-full hover:no-underline">
+                              <a href={experience.titleLink}>
+                                {experience.title}
+                              </a>
+                            </span>
+                          ) : (
+                            <span className="text-pcWhite font-bold">
                               {experience.title}
-                            </a>
-                          </span>
+                            </span>
+                          )}
                         </h3>
-                        <div className="mt-4 mb-4 text-pcGray2 font-pfFont">
+                        <div className="mt-4 mb-4 text-pcGray2 font-pfFont list-disc pl-5 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-2">
                           <BlockContent
                             className=""
                             blocks={experience.experience}

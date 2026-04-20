@@ -10,6 +10,8 @@ import {
   useTransform,
   useSpring,
 } from "framer-motion";
+import projectDetails from "../data/projectDetails";
+import ScrollSpy from "./ScrollSpy";
 
 export default function SingleProject() {
   const { scrollYProgress } = useViewportScroll();
@@ -281,8 +283,18 @@ export default function SingleProject() {
       "authorImage": author-> image
     }`
       )
-      .then((data) => setSingleProjectData(data[0]))
-      .catch(console.error);
+      .then((data) => {
+        if (data && data[0]) {
+          setSingleProjectData(data[0]);
+        } else if (projectDetails[slug]) {
+          setSingleProjectData(projectDetails[slug]);
+        }
+      })
+      .catch(() => {
+        if (projectDetails[slug]) {
+          setSingleProjectData(projectDetails[slug]);
+        }
+      });
   }, [slug]);
 
   console.log("loading is now: " + loading);
@@ -345,7 +357,9 @@ export default function SingleProject() {
     transition={{ duration: 0.5 }} */}
       </div>
 
+      <ScrollSpy />
       <div
+        data-scrollspy
         className="px-[24px] 2xl:px-[240px] md:px-[24px] lg:px-[80px] text-pfFont bg-repeat"
         style={{
           backgroundImage: `url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
@@ -404,7 +418,7 @@ export default function SingleProject() {
             alt={singleProjectData.name}
           />
         </div>
-        <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
+        <div data-section="overview" id="section-overview" className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
           <div className="text-pcWhite">
             <p className="mb-2 font-bold text-[12px] font-pfFont2">OVERVIEW</p>
             <div className="font-pfFont md:text-[18px] text-[16px]">

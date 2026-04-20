@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { authorData as fallbackFooterAuthor } from "../data/fallback";
 
 export default function Footer() {
   const [authorData, setAuthorData] = useState(null);
@@ -15,16 +16,18 @@ export default function Footer() {
               _id,
               url
             },
-            alt 
+            alt
           },
           email,
           name,
               title,
-              bio, 
+              bio,
         }`
       )
-      .then((data) => setAuthorData(data[0]))
-      .catch(console.error);
+      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackFooterAuthor))
+      .catch(() => {
+        setAuthorData(fallbackFooterAuthor);
+      });
   }, []);
 
   if (!authorData) {
@@ -70,7 +73,7 @@ export default function Footer() {
       </p>
 
       <p className="text-pcWhite text-[16px] font-regular text-center mb-4">
-        © 2025 Jimmy Esteban
+        © 2026 Jimmy Esteban
       </p>
     </footer>
   );

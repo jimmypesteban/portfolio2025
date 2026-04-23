@@ -599,7 +599,7 @@ export default function Home() {
         </div>
 
         <div className="mt-[-240px] md:mt-0  lg:pt-12 2xl:px-[320px] lg:px-[80px] px-[16px]">
-          <div className="lg:columns-2 sm:columns-1 gap-10">
+          <div>
             <div className="flex flex-wrap justify-center items-center min-h-[320px]  mb-10 ">
               <div className="relative mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[96px] text-[64px] text-Black font-bold font-pfFont2 text-center drop-shadow-[0_0.4px_0.4px_#fff]  mix-blend-difference">
                 Selected Works
@@ -609,11 +609,19 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               {projectData &&
-                projectData.map((projectData, index) => (
+                projectData.map((projectData, index) => {
+                  // Mobile: date order (array order): Edtech(0) Plangora(1) Neuromatics(2) Hotel(3) Datago(4) Melon(5)
+                  // Desktop 2-col (grid L→R per row):
+                  //   Row 1: Plangora(1) left, Edtech(0) right
+                  //   Row 2: Hotel(3) left, Neuromatics(2) right
+                  //   Row 3: Melon(5) left, Datago(4) right
+                  // Desktop 2-col order: left=Plangora,Hotel,Melon right=Edtech,Neuromatics,Datago
+                  const lgOrderClass = ["lg:order-2","lg:order-1","lg:order-4","lg:order-3","lg:order-6","lg:order-5"][index] || "";
+                  return (
                   <div
-                    className="md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden mb-10 break-inside-avoid"
+                    className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden ${lgOrderClass}`}
                     key={index}
                   >
                     <div className="relative">
@@ -720,7 +728,8 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                ))}
+                  );
+                })}
             </div>
           </div>
         </div>

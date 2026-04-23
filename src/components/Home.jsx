@@ -417,9 +417,14 @@ export default function Home() {
             <div className="relative w-full h-[calc(100vh-100px)] overflow-hidden">
               <div className="absolute w-full top-[35%] md:text-[56px] text-[32px] font-bold text-center z-10 px-[16px] md:px-[40px]">
                 <span className="px-3 py-1 box-decoration-clone rounded-[8px]" style={{ boxDecorationBreak: "clone", backgroundColor: "rgba(25,25,25,1)" }}>
-                  Hello I'm {authorData.name}, a UI/UX Designer
+                  Hello I'm {authorData.name}, a UX Engineer
                 </span>
-                <p className="md:text-[24px] text-[20px] mt-4 mb-8 text-center font-medium text-pcGray3 font-pfFont">
+                <p className="md:text-[24px] text-[20px] mt-4 mb-2 text-center font-medium text-pcGray3 font-pfFont">
+                  <span className="px-3 py-1 box-decoration-clone rounded-[8px]" style={{ boxDecorationBreak: "clone", backgroundColor: "rgba(25,25,25,1)" }}>
+                    Designing high-fidelity systems in Figma, shipping production-ready code with AI.
+                  </span>
+                </p>
+                <p className="md:text-[24px] text-[20px] mt-2 mb-8 text-center font-medium text-pcGray3 font-pfFont">
                   <span className="px-3 py-1 box-decoration-clone rounded-[8px]" style={{ boxDecorationBreak: "clone", backgroundColor: "rgba(25,25,25,1)" }}>
                     Worked in startup industries such as{" "}
                     <strong>Fintech</strong>, <strong>Edutech</strong>, <strong>IT Consultancy</strong>, and{" "}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import sanityClient from "../client.js";
+// import sanityClient from "../client.js"; // Static data (Sanity removed)
 import BlockContent from "@sanity/block-content-to-react";
 import { motion } from "framer-motion";
 import { authorData as fallbackAuthor } from "../data/fallback";
@@ -56,29 +56,8 @@ export default function AboutMe() {
       setLoading(false);
     }, 1500);
 
-    sanityClient
-      .fetch(
-        `*[_type == "author"]{
-              experience, education, bio, email,
-              skillsContent,
-              resume{
-                asset->{
-                  _id,
-                  url
-                }
-              },
-              recommendationLetter{
-                asset->{
-                  _id,
-                  url
-                }
-              },
-        }`
-      )
-      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackAuthor))
-      .catch(() => {
-        setAuthorData(fallbackAuthor);
-      });
+    // Static data (Sanity removed)
+    setAuthorData(fallbackAuthor);
   }, []);
 
   if (!authorData || loading === true) {

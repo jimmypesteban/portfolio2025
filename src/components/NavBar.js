@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import sanityClient from "../client.js";
+// import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { NavLink, useLocation } from "react-router-dom";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { authorData as fallbackNavAuthor } from "../data/fallback";
@@ -27,25 +27,8 @@ export default function NavBar() {
   };
 
   useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "author"]{
-          signature{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          name,
-              title,
-              bio, 
-        }`
-      )
-      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackNavAuthor))
-      .catch(() => {
-        setAuthorData(fallbackNavAuthor);
-      });
+    // Static data (Sanity removed)
+    setAuthorData(fallbackNavAuthor);
   }, []);
 
   if (!authorData) {

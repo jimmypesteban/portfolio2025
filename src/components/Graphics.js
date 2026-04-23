@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
+// import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { AnimatePresence, motion } from "framer-motion";
 import { galleryData as fallbackGallery } from "../data/fallback";
 
@@ -9,19 +9,8 @@ export default function Graphics() {
 
   useEffect(() => {
     console.log("called!");
-    sanityClient
-      .fetch(
-        `*[_type == "gallery"]{
-          title,
-          description,
-          imageURL,
-          imageContentURL,
-        }`
-      )
-      .then((data) => setGraphicsData(data && data.length > 0 ? data : fallbackGallery))
-      .catch(() => {
-        setGraphicsData(fallbackGallery);
-      });
+    // Static data (Sanity removed)
+    setGraphicsData(fallbackGallery);
   }, []);
 
   console.log(GraphicsData);

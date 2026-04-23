@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
+// import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { AnimatePresence, motion } from "framer-motion";
 import { allProjects as fallbackAllProjects } from "../data/fallback";
 
@@ -8,29 +8,8 @@ export default function Others() {
   const [projectData, setProjectData] = useState(null);
 
   useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "project" && "All Project" in categories[]->title] | order(publishedAt desc){
-          "categories": categories[]->title,
-          title,
-          slug,
-          categories[]->{
-            title
-          },
-          mainImage{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          publishedAt
-        }`
-      )
-      .then((data) => setProjectData(data && data.length > 0 ? data : fallbackAllProjects))
-      .catch(() => {
-        setProjectData(fallbackAllProjects);
-      });
+    // Static data (Sanity removed)
+    setProjectData(fallbackAllProjects);
   }, []);
 
   if (!projectData) {

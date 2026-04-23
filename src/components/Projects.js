@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
+// import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { AnimatePresence, motion } from "framer-motion";
 import { allProjects as fallbackAllProjects, personalProjects as fallbackPersonalProjects } from "../data/fallback";
 
@@ -58,77 +58,13 @@ export default function Projects() {
       setLoading(false);
     }, 1500);
 
-    sanityClient
-      .fetch(
-        `*[_type == "project" && "All Project" in categories[]->title] | order(publishedAt desc){
-          "categories": categories[]->title,
-          title,
-          slug,
-          categories[]->{
-            title
-          },
-          projectBanner{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          publishedAt,
-          projectTags,
-          duration,
-          role,
-          liveSite,
-          externalLink,
-          projectTitleColor,
-          projectTagsColor,
-          projectButtonColor,
-          extraColor1,
-          extraColor2,
-        }`
-      )
-      .then((data) => {
-        setProjectData(data && data.length > 0 ? data : fallbackAllProjects);
-      })
-      .catch(() => {
-        setProjectData(fallbackAllProjects);
-      });
+    // Static data (Sanity removed)
+    setProjectData(fallbackAllProjects);
   }, []);
 
   useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "project" && "Personal" in categories[]->title] | order(publishedAt desc){
-          "categories": categories[]->title,
-          title,
-          slug,
-          categories[]->{
-            title
-          },
-          projectBanner{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          publishedAt,
-          projectTags,
-          duration,
-          role,
-          liveSite,
-          externalLink,
-          projectTitleColor,
-          projectTagsColor,
-          projectButtonColor,
-        }`
-      )
-      .then((data) => {
-        setProjectPersonalData(data && data.length > 0 ? data : fallbackPersonalProjects);
-      })
-      .catch(() => {
-        setProjectPersonalData(fallbackPersonalProjects);
-      });
+    // Static data (Sanity removed)
+    setProjectPersonalData(fallbackPersonalProjects);
   }, []);
 
   if (!projectData || loading === true) {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import sanityClient from "../client.js";
+// import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { animate, motion } from "framer-motion";
 import { authorData as fallbackAuthor, homepageProjects as fallbackProjects } from "../data/fallback";
 
@@ -272,58 +272,8 @@ export default function Home() {
       setLoading(false);
     }, 1500);
 
-    sanityClient
-      .fetch(
-        `*[_type == "project" && "Homepage" in categories[]->title] | order(publishedAt desc){
-          "categories": categories[]->title,
-          title,
-          headline,
-          role,
-          brief,
-          duration,
-          projectTitleColor,
-          projectTagsColor,
-          projectButtonColor,
-          extraColor1,
-          extraColor2,
-          slug,
-          liveSite,
-          externalLink,
-          categories[]->{
-            title
-          },
-          projectLogo{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          projectBanner{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          projectHomeBanner{
-            asset->{
-              _id,
-              url
-            },
-            alt 
-          },
-          
-          publishedAt,
-          projectTags
-        }`
-      )
-      .then((data) => {
-        setProjectData(data && data.length > 0 ? data : fallbackProjects);
-      })
-      .catch(() => {
-        setProjectData(fallbackProjects);
-      });
+    // Use static fallback data directly (Sanity no longer available)
+    setProjectData(fallbackProjects);
 
     return () => {
       clearTimeout();
@@ -331,37 +281,8 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "author"]{
-              name,
-              title,
-              bio,
-              homeBanner{
-                asset->{
-                  _id,
-                  url
-                },
-                alt 
-              },
-              resume{
-                asset->{
-                  _id,
-                  url
-                }
-              },
-              recommendationLetter{
-                asset->{
-                  _id,
-                  url
-                }
-              },
-        }`
-      )
-      .then((data) => setAuthorData(data && data[0] ? data[0] : fallbackAuthor))
-      .catch(() => {
-        setAuthorData(fallbackAuthor);
-      });
+    // Static data (Sanity removed)
+    setAuthorData(fallbackAuthor);
   }, []);
 
   if (!authorData || loading === true) {

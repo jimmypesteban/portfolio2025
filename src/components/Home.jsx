@@ -617,8 +617,8 @@ export default function Home() {
                   //   Row 1: Plangora(1) left, Edtech(0) right
                   //   Row 2: Hotel(3) left, Neuromatics(2) right
                   //   Row 3: Melon(5) left, Datago(4) right
-                  // Desktop 2-col order: left=Plangora,Hotel,Melon right=Edtech,Neuromatics,Datago
-                  const lgOrderClass = ["lg:order-2","lg:order-1","lg:order-4","lg:order-3","lg:order-6","lg:order-5"][index] || "";
+                  // Desktop 2-col order: left=Plangora,Datago right=Edtech,Neuromatics
+                  const lgOrderClass = ["lg:order-2","lg:order-1","lg:order-4","lg:order-3"][index] || "";
                   return (
                   <div
                     className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden ${lgOrderClass}`}

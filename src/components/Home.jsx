@@ -538,16 +538,9 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               {projectData &&
                 projectData.map((projectData, index) => {
-                  // Mobile: date order (array order): Edtech(0) Plangora(1) Neuromatics(2) Hotel(3) Datago(4) Melon(5)
-                  // Desktop 2-col (grid L→R per row):
-                  //   Row 1: Plangora(1) left, Edtech(0) right
-                  //   Row 2: Hotel(3) left, Neuromatics(2) right
-                  //   Row 3: Melon(5) left, Datago(4) right
-                  // Desktop 2-col order: left=Plangora,Datago right=Edtech,Neuromatics
-                  const lgOrderClass = ["lg:order-2","lg:order-1","lg:order-4","lg:order-3"][index] || "";
                   return (
                   <div
-                    className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden ${lgOrderClass}`}
+                    className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden`}
                     key={index}
                   >
                     <div className="relative">

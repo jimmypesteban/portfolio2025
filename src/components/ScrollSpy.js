@@ -10,6 +10,7 @@ export default function ScrollSpy() {
   const observerRef = useRef(null);
   const pillRefs = useRef({});
   const pillsContainerRef = useRef(null);
+  const mobileBarRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -59,9 +60,19 @@ export default function ScrollSpy() {
     const onScroll = () => setVisible(window.scrollY > 500);
     window.addEventListener("scroll", onScroll);
 
+    const onClickOutside = (e) => {
+      if (mobileBarRef.current && !mobileBarRef.current.contains(e.target)) {
+        setMobileOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onClickOutside);
+    document.addEventListener("touchstart", onClickOutside);
+
     return () => {
       clearTimeout(timer);
       window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("mousedown", onClickOutside);
+      document.removeEventListener("touchstart", onClickOutside);
       if (observerRef.current) observerRef.current.disconnect();
     };
   }, []);
@@ -115,7 +126,7 @@ export default function ScrollSpy() {
   return (
     <div data-scrollspy-bar className="fixed top-[101px] left-0 right-0 z-[45]">
       {/* Mobile/Tablet: toggle dropdown (below lg) */}
-      <div className="lg:hidden">
+      <div ref={mobileBarRef} className="lg:hidden">
         <button
           data-scrollspy-toggle
           onClick={() => setMobileOpen(!mobileOpen)}

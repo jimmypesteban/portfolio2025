@@ -117,7 +117,7 @@ const _oldInlineProjects = [
 
 export default function Home() {
   const [authorData, setAuthorData] = useState(null);
-  const [projectData, setProjectData] = useState("Homepage");
+  const [projectData, setProjectData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const InitialTransition = () => {};

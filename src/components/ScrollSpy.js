@@ -7,10 +7,21 @@ export default function ScrollSpy() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
+  const [navHeight, setNavHeight] = useState(101);
   const observerRef = useRef(null);
   const pillRefs = useRef({});
   const pillsContainerRef = useRef(null);
   const mobileBarRef = useRef(null);
+
+  useEffect(() => {
+    const measureNav = () => {
+      const header = document.querySelector("header");
+      if (header) setNavHeight(header.offsetHeight);
+    };
+    measureNav();
+    window.addEventListener("resize", measureNav);
+    return () => window.removeEventListener("resize", measureNav);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -112,7 +123,8 @@ export default function ScrollSpy() {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
     if (!el) return;
-    const offset = 180; // sticky navbar (~101px) + scrollspy bar (~44px) + buffer
+    const spyBar = document.querySelector("[data-scrollspy-bar]");
+    const offset = navHeight + (spyBar?.offsetHeight ?? 44) + 16;
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "smooth" });
     setMobileOpen(false);
@@ -124,7 +136,7 @@ export default function ScrollSpy() {
   if (!visible || sections.length < 2) return null;
 
   return (
-    <div data-scrollspy-bar className="fixed top-[101px] left-0 right-0 z-[45]">
+    <div data-scrollspy-bar className="fixed left-0 right-0 z-[45]" style={{ top: navHeight }}>
       {/* Mobile/Tablet: toggle dropdown (below lg) */}
       <div ref={mobileBarRef} className="lg:hidden">
         <button

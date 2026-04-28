@@ -8,38 +8,38 @@ const projectDetails = {
     "designSystemGallery": [
       {
         "asset": {
-          "_id": "image-febd84a2bddc0c60565508aa4e738d6cffba007c-3840x2400-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/febd84a2bddc0c60565508aa4e738d6cffba007c-3840x2400.jpg"
-        }
-      },
-      {
-        "asset": {
-          "_id": "image-b03cbf630690a00536689d29216218a89d014f1f-3840x2400-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b03cbf630690a00536689d29216218a89d014f1f-3840x2400.jpg"
-        }
-      },
-      {
-        "asset": {
-          "_id": "image-9d314c7011aaafeeef3f3058b0cd0018c24c61e5-3840x2400-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9d314c7011aaafeeef3f3058b0cd0018c24c61e5-3840x2400.jpg"
-        }
-      },
-      {
-        "asset": {
           "_id": "image-92e2c879126578ba420aa0f0d4b29b98c8b7e88b-3840x2400-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/92e2c879126578ba420aa0f0d4b29b98c8b7e88b-3840x2400.jpg"
+          "url": "/hkbu/Education.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-df4a500276a93043c6d39f4d4e84afd15962bcda-3840x2400-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/df4a500276a93043c6d39f4d4e84afd15962bcda-3840x2400.jpg"
+          "url": "/hkbu/Finance.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-d55871d053dc0d3bfcddad5e3ee2464111981d08-3840x2400-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/d55871d053dc0d3bfcddad5e3ee2464111981d08-3840x2400.jpg"
+          "url": "/hkbu/Health.jpg"
+        }
+      },
+      {
+        "asset": {
+          "_id": "image-politics-3840x2400-jpg",
+          "url": "/hkbu/Politics.jpg"
+        }
+      },
+      {
+        "asset": {
+          "_id": "image-d61ec739867260d808750c4e9ed3b9c5f4a10ed2-3840x2160-jpg",
+          "url": "/hkbu/Technology.jpg"
+        }
+      },
+      {
+        "asset": {
+          "_id": "image-traffic-3840x2400-jpg",
+          "url": "/hkbu/Traffic.jpg"
         }
       }
     ],
@@ -56,7 +56,7 @@ const projectDetails = {
             "_key": "034945fa9df10",
             "_type": "span",
             "marks": [],
-            "text": "• Treemaps with categorical tabs, able to rearrange map with time scope and redirects to detailed of the keyword by clicking on the tiles"
+            "text": "Treemaps with categorical tabs, able to rearrange map with time scope and redirects to detailed of the keyword by clicking on the tiles"
           }
         ],
         "markDefs": [],
@@ -73,7 +73,7 @@ const projectDetails = {
             "_key": "c802256f51360",
             "_type": "span",
             "marks": [],
-            "text": "• Stacked chart"
+            "text": "Stacked chart"
           }
         ],
         "markDefs": [],
@@ -89,7 +89,7 @@ const projectDetails = {
             "_key": "410fb6b350db0",
             "_type": "span",
             "marks": [],
-            "text": "• Tables with publish time, refute time, title, verdict, and related keywords\n"
+            "text": "Tables with publish time, refute time, title, verdict, and related keywords\n"
           }
         ],
         "markDefs": [],
@@ -105,7 +105,7 @@ const projectDetails = {
             "_key": "f681944fa3fa0",
             "_type": "span",
             "marks": [],
-            "text": "• Word cloud\n"
+            "text": "Word cloud\n"
           }
         ],
         "markDefs": [],
@@ -121,7 +121,7 @@ const projectDetails = {
             "_key": "d35b6c79263f0",
             "_type": "span",
             "marks": [],
-            "text": "• Bi-directional bar chart\n"
+            "text": "Bi-directional bar chart\n"
           }
         ],
         "markDefs": [],
@@ -137,7 +137,7 @@ const projectDetails = {
             "_key": "3ced514cf7640",
             "_type": "span",
             "marks": [],
-            "text": "• Network Graph for the relationship between user and information/event (with a draggable time bar to show the start to end)\n"
+            "text": "Network Graph for the relationship between user and information/event (with a draggable time bar to show the start to end)\n"
           }
         ],
         "markDefs": [],
@@ -161,22 +161,22 @@ const projectDetails = {
     "extraImage1": {
       "alt": null,
       "asset": {
-        "_id": "image-284d1407dc9c796e56645916d78216083bd125ed-3840x2400-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/284d1407dc9c796e56645916d78216083bd125ed-3840x2400.jpg"
+        "_id": "image-9d314c7011aaafeeef3f3058b0cd0018c24c61e5-3840x2400-jpg",
+        "url": "/hkbu/Dashboard home.jpg"
       }
     },
     "extraImage2": {
       "alt": null,
       "asset": {
         "_id": "image-c753ead3f82f835ab86a55c3facceabc489c2f9d-3840x3876-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/c753ead3f82f835ab86a55c3facceabc489c2f9d-3840x3876.jpg"
+        "url": "/hkbu/Overview.jpg"
       }
     },
     "extraImage3": {
       "alt": null,
       "asset": {
-        "_id": "image-539076d24ca9987641b87e66ab9a821364c698c7-3840x2160-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/539076d24ca9987641b87e66ab9a821364c698c7-3840x2160.jpg"
+        "_id": "image-284d1407dc9c796e56645916d78216083bd125ed-3840x2400-jpg",
+        "url": "/hkbu/Network Graph.jpg"
       }
     },
     "extraImage4": null,
@@ -220,8 +220,8 @@ const projectDetails = {
     "processTitle": "Charts to design:",
     "projectBanner": {
       "asset": {
-        "_id": "image-d61ec739867260d808750c4e9ed3b9c5f4a10ed2-3840x2160-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/d61ec739867260d808750c4e9ed3b9c5f4a10ed2-3840x2160.jpg"
+        "_id": "image-9d314c7011aaafeeef3f3058b0cd0018c24c61e5-3840x2400-jpg",
+        "url": "/hkbu/Dashboard home.jpg"
       }
     },
     "projectButtonColor": "#FFFFFF",
@@ -310,7 +310,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-5ca9d0178a34977cf346a6af613f1ac97b6392cb-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/5ca9d0178a34977cf346a6af613f1ac97b6392cb-3840x2160.png"
+        "url": "/hkbu/Traffic.jpg"
       }
     },
     "projectButtonColor": null,
@@ -411,7 +411,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-c4d2d007a0d689503e4759cb580440091cc51153-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/c4d2d007a0d689503e4759cb580440091cc51153-3840x2160.png"
+        "url": "/plangora-academy/PlangoraAcademyHomeCover.png"
       }
     },
     "projectButtonColor": "#38863B",
@@ -453,133 +453,139 @@ const projectDetails = {
       {
         "asset": {
           "_id": "image-dd8f09acb17961b41458ac8c6936743f7079cb79-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/dd8f09acb17961b41458ac8c6936743f7079cb79-1920x1080.gif"
+          "url": "/dailyui/DailyUI001.gif"
         }
       },
       {
         "asset": {
           "_id": "image-6076e30ce338a8ac33b8ff8fd2e8eebb6d13afc5-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/6076e30ce338a8ac33b8ff8fd2e8eebb6d13afc5-1920x1080.jpg"
+          "url": "/dailyui/DailyUI002.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-04b872fea5bd7539267a9f68091f1d976b4901aa-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/04b872fea5bd7539267a9f68091f1d976b4901aa-1920x1080.jpg"
+          "url": "/dailyui/DailyUI003.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-ef036c7d48d3c73b74b7971cfc0d8d51a7b5c663-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ef036c7d48d3c73b74b7971cfc0d8d51a7b5c663-1920x1080.jpg"
+          "url": "/dailyui/DailyUI004.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-0ec0b0d055c57f1226e315d94e09b31ef542c259-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/0ec0b0d055c57f1226e315d94e09b31ef542c259-1920x1080.jpg"
+          "url": "/dailyui/DailyUI005.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-6957e1974ac75dbd5cda1c1f9c8bdf6d7b93ed4b-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/6957e1974ac75dbd5cda1c1f9c8bdf6d7b93ed4b-1920x1080.jpg"
+          "url": "/dailyui/DailyUI006.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-b5c292cac13b53dce9798f90b355551fcd824512-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b5c292cac13b53dce9798f90b355551fcd824512-1920x1080.jpg"
+          "url": "/dailyui/DailyUI007.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-b1103ef60b79bba3816e128798113b0a9068474b-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b1103ef60b79bba3816e128798113b0a9068474b-1920x1080.jpg"
+          "url": "/dailyui/DailyUI008.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-2c39e4617084b77f0731b04707bf2b459a8de93b-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/2c39e4617084b77f0731b04707bf2b459a8de93b-1920x1080.jpg"
+          "url": "/dailyui/DailyUI009.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-26d8ab49a525c64879e0fedae0a099aef3717297-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/26d8ab49a525c64879e0fedae0a099aef3717297-1920x1080.gif"
+          "url": "/dailyui/DailyUI010.gif"
         }
       },
       {
         "asset": {
           "_id": "image-13b71e696bd3121bb8697bbd847d91f65ad7ee90-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/13b71e696bd3121bb8697bbd847d91f65ad7ee90-1920x1080.gif"
+          "url": "/dailyui/DailyUI011.gif"
         }
       },
       {
         "asset": {
           "_id": "image-6796e6efd8f428f29a3a2c5b8740ad607c485aae-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/6796e6efd8f428f29a3a2c5b8740ad607c485aae-1920x1080.jpg"
+          "url": "/dailyui/DailyUI012.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-58c12e8ce3c0e5743844525e622aab9ec3e46020-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/58c12e8ce3c0e5743844525e622aab9ec3e46020-1920x1080.jpg"
+          "url": "/dailyui/DailyUI013.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-22651e756b2f89e8fc9266b4075370d33f0b00f2-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/22651e756b2f89e8fc9266b4075370d33f0b00f2-1920x1080.gif"
+          "url": "/dailyui/DailyUI013home.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-e2bf7ef8194c84fa2cbadf64c9ca958e49e3b0b6-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/e2bf7ef8194c84fa2cbadf64c9ca958e49e3b0b6-1920x1080.gif"
+          "url": "/dailyui/DailyUI014.gif"
         }
       },
       {
         "asset": {
           "_id": "image-02b9c787e0420e2f2707a0d62a47171f685dce08-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/02b9c787e0420e2f2707a0d62a47171f685dce08-1920x1080.jpg"
+          "url": "/dailyui/DailyUI015.gif"
         }
       },
       {
         "asset": {
           "_id": "image-a3caf21186e0037c0167c6818d9f1f1c4b058f61-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/a3caf21186e0037c0167c6818d9f1f1c4b058f61-1920x1080.jpg"
+          "url": "/dailyui/DailyUI016.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-c42abca28748b341b32fb74ecd08b5d096a5fcd2-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c42abca28748b341b32fb74ecd08b5d096a5fcd2-1920x1080.jpg"
+          "url": "/dailyui/DailyUI017.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-d7c8bdd683c25374908954b0f5e47b29a524e8c3-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/d7c8bdd683c25374908954b0f5e47b29a524e8c3-1920x1080.jpg"
+          "url": "/dailyui/DailyUI018.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-ca5cb2334a6d6eb3a008e78d2baa4a01f9f438d9-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ca5cb2334a6d6eb3a008e78d2baa4a01f9f438d9-1920x1080.jpg"
+          "url": "/dailyui/DailyUI019.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-9750f2fc13749fb1ba44e65f8385039081b35ca7-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9750f2fc13749fb1ba44e65f8385039081b35ca7-1920x1080.jpg"
+          "url": "/dailyui/DailyUI020.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-c1bcc876fa318e3f1add4d23b5c007e0bc51a951-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c1bcc876fa318e3f1add4d23b5c007e0bc51a951-1920x1080.gif"
+          "url": "/dailyui/DailyUI022.jpg"
+        }
+      },
+      {
+        "asset": {
+          "_id": "file-c87d02b7ac8de8e33d5637072621d6edd769358f-gif",
+          "url": "/dailyui/DailyUI023.gif"
         }
       }
     ],
@@ -626,56 +632,56 @@ const projectDetails = {
     "gifGallery": [
       {
         "asset": {
-          "_id": "file-c87d02b7ac8de8e33d5637072621d6edd769358f-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/c87d02b7ac8de8e33d5637072621d6edd769358f.gif"
+          "_id": "file-outlinefill-gif",
+          "url": "/dailyui/outlinefill.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-893ac19d933ad4b8bb009c9917baea2b55dde7de-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/893ac19d933ad4b8bb009c9917baea2b55dde7de.gif"
+          "_id": "file-solidfill-gif",
+          "url": "/dailyui/solidfill.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-65dcaf7841645959b53660b0155fa8134ae9e3bf-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/65dcaf7841645959b53660b0155fa8134ae9e3bf.gif"
+          "_id": "file-underline-gif",
+          "url": "/dailyui/underline.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-4331eb2a074211d4166be70464479cfaa30bcf4e-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/4331eb2a074211d4166be70464479cfaa30bcf4e.gif"
+          "_id": "file-slideout-gif",
+          "url": "/dailyui/slideout.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-cca1d7f1ab20e578e3cf41eba77bf8ad501f1e9a-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/cca1d7f1ab20e578e3cf41eba77bf8ad501f1e9a.gif"
+          "_id": "file-popup-gif",
+          "url": "/dailyui/popup.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-8ab15e7be3410e43efad57e63665ce3db91bee1f-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/8ab15e7be3410e43efad57e63665ce3db91bee1f.gif"
+          "_id": "file-expand-gif",
+          "url": "/dailyui/expand.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-f1554af4dd8df1c7e922aca74b5b7f8a6ff897fd-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/f1554af4dd8df1c7e922aca74b5b7f8a6ff897fd.gif"
+          "_id": "file-doublecircle-gif",
+          "url": "/dailyui/doublecircle.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-09b488eb50cf394c1731fb89d6370e6465e424ba-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/09b488eb50cf394c1731fb89d6370e6465e424ba.gif"
+          "_id": "file-lamp-gif",
+          "url": "/dailyui/lamp.gif"
         }
       },
       {
         "asset": {
-          "_id": "file-cff20f7cc2797ca16eb3c232461d6fc98d29efe3-gif",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/cff20f7cc2797ca16eb3c232461d6fc98d29efe3.gif"
+          "_id": "file-flip-gif",
+          "url": "/dailyui/flip.gif"
         }
       }
     ],
@@ -692,8 +698,8 @@ const projectDetails = {
     "processTitle": null,
     "projectBanner": {
       "asset": {
-        "_id": "image-e2fc77bb2f8c5ecdaf9bc90102a1a40d27a6bffd-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/e2fc77bb2f8c5ecdaf9bc90102a1a40d27a6bffd-1920x1080.jpg"
+        "_id": "image-22651e756b2f89e8fc9266b4075370d33f0b00f2-1920x1080-jpg",
+        "url": "/dailyui/DailyUI013home.jpg"
       }
     },
     "projectButtonColor": null,
@@ -712,14 +718,14 @@ const projectDetails = {
     "responsibilites": null,
     "result": null,
     "resultContent": null,
-    "role": "UI Designer",
+    "role": null,
     "slug": {
       "_type": "slug",
       "current": "dailyui"
     },
     "teamMembers": null,
     "title": "DailyUI",
-    "tools": null,
+    "tools": "AdobeXD, InVision",
     "videosUrl": null
   },
   "datagotech": {
@@ -865,14 +871,14 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-a94278915b024e45f425b9497744feb2a3e7cf9a-1920x1291-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/a94278915b024e45f425b9497744feb2a3e7cf9a-1920x1291.jpg"
+        "url": "/datagotech/Colors.jpg"
       }
     },
     "designSystemImage2": {
       "alt": null,
       "asset": {
         "_id": "image-71412869288c601b20f7c9f4ee45497f592c5869-3840x4320-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/71412869288c601b20f7c9f4ee45497f592c5869-3840x4320.png"
+        "url": "/datagotech/Colors_dark.jpg"
       }
     },
     "designSystemTitle": null,
@@ -1007,14 +1013,14 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-4e055e7c65bf302cb1efdc16422922fa0042e0c9-1401x1648-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/4e055e7c65bf302cb1efdc16422922fa0042e0c9-1401x1648.png"
+          "url": "/datagotech/Components1.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-b11ab9b5a2018057df6fdba0be018c0a0c898096-1401x1898-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b11ab9b5a2018057df6fdba0be018c0a0c898096-1401x1898.png"
+          "url": "/datagotech/Components2.jpg"
         }
       }
     ],
@@ -1023,28 +1029,28 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-9736866552b09d7d8e649b8ae612a57576459a9b-3840x3050-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9736866552b09d7d8e649b8ae612a57576459a9b-3840x3050.png"
+          "url": "/datagotech/Components3.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-d4740b85df09ce955c805dc9cd952ddad94eb13d-3840x3050-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/d4740b85df09ce955c805dc9cd952ddad94eb13d-3840x3050.png"
+          "url": "/datagotech/Frame 261.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-1bb635e667fdd3ce92a68048818a019b0935486b-3840x1920-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/1bb635e667fdd3ce92a68048818a019b0935486b-3840x1920.png"
+          "url": "/datagotech/Icons & Logo.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-449793d567932a312f02cfab6563e4ce884db42f-3840x1920-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/449793d567932a312f02cfab6563e4ce884db42f-3840x1920.png"
+          "url": "/datagotech/Icons & Logo_dark.jpg"
         }
       }
     ],
@@ -1058,7 +1064,7 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-44e4fc71309ce3455de0121b5614450311621eb6-3840x1844-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/44e4fc71309ce3455de0121b5614450311621eb6-3840x1844.png"
+        "url": "/datagotech/Intro.png"
       }
     },
     "extraImage2": null,
@@ -1160,13 +1166,13 @@ const projectDetails = {
       {
         "asset": {
           "_id": "file-8b90d2f8111137d87e31432213a8d87226ab7b42-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/8b90d2f8111137d87e31432213a8d87226ab7b42.png"
+          "url": "/datagotech/Preference (Display).png"
         }
       },
       {
         "asset": {
           "_id": "file-ee0093d4389649f363158ef03f2cb402e18117ac-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/ee0093d4389649f363158ef03f2cb402e18117ac.png"
+          "url": "/datagotech/Typography-1.jpg"
         }
       }
     ],
@@ -1291,7 +1297,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-06548c4f4c8b9168db8a001a6932265c7337d923-3840x2160-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/06548c4f4c8b9168db8a001a6932265c7337d923-3840x2160.jpg"
+        "url": "/datagotech/Typography.jpg"
       }
     },
     "projectButtonColor": "#8DCAFF",
@@ -1486,7 +1492,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-298e6eea8e6ca0b39ed5ad8c92a6eee1376c823e-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/298e6eea8e6ca0b39ed5ad8c92a6eee1376c823e-1920x1080.jpg"
+        "url": "/blitz/blitzsolutions1.jpg"
       }
     },
     "projectButtonColor": "#FFFFFF",
@@ -1538,13 +1544,13 @@ const projectDetails = {
       {
         "asset": {
           "_id": "image-858a9a4dc8ce85721aaafd3b3460117159b24924-3840x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/858a9a4dc8ce85721aaafd3b3460117159b24924-3840x2160.png"
+          "url": "/plangora/fhwfquestions.png"
         }
       },
       {
         "asset": {
           "_id": "image-103adb71a12f2b1653871b9a9f9fe9a1aa7a9815-3840x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/103adb71a12f2b1653871b9a9f9fe9a1aa7a9815-3840x2160.png"
+          "url": "/plangora/fhwf2.png"
         }
       }
     ],
@@ -1718,28 +1724,28 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-09cedb878a571c66e61695227ccd84e498460cc7-1920x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/09cedb878a571c66e61695227ccd84e498460cc7-1920x1080.jpg"
+          "url": "/plangora/About this course.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-fd7ea65fe85d174c462a0e74c9cf690092e2336b-3840x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/fd7ea65fe85d174c462a0e74c9cf690092e2336b-3840x2160.png"
+          "url": "/plangora/rustWithFlutterCourseCheatsheet.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-c41c4b80d40d09ebcf589ab99be4fa98ba657cd3-1920x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c41c4b80d40d09ebcf589ab99be4fa98ba657cd3-1920x1080.gif"
+          "url": "/plangora/ferrisLoading 2.gif"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-dcf0e111154c341d02a34ac77a1dc58150f75cd7-3840x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/dcf0e111154c341d02a34ac77a1dc58150f75cd7-3840x2160.png"
+          "url": "/plangora/rustWithFlutterCourseSnippet.png"
         }
       }
     ],
@@ -1748,14 +1754,14 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-c556196690dfdb18c5969d45ed4a9ddd339b3a7d-3840x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c556196690dfdb18c5969d45ed4a9ddd339b3a7d-3840x2160.png"
+          "url": "/plangora/plangora2.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-da79eb8f1291a3904bd14c204d3172f04d0372ed-3840x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/da79eb8f1291a3904bd14c204d3172f04d0372ed-3840x2160.png"
+          "url": "/plangora/plangoraBrandGuidelines.png"
         }
       }
     ],
@@ -1769,28 +1775,28 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-2da1a28356ca12b7f89868483190dfd8bfd76b0a-3568x2380-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/2da1a28356ca12b7f89868483190dfd8bfd76b0a-3568x2380.png"
+        "url": "/plangora/plangoraCover.png"
       }
     },
     "extraImage2": {
       "alt": null,
       "asset": {
         "_id": "image-90c85f5461f47f8d6b2cc4e88f5f70eb5fa1af0a-3840x2700-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/90c85f5461f47f8d6b2cc4e88f5f70eb5fa1af0a-3840x2700.png"
+        "url": "/plangora/rwfBanner.jpg"
       }
     },
     "extraImage3": {
       "alt": null,
       "asset": {
         "_id": "image-fd6b0807d3023a2b77e419fad39de60b64819f8e-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/fd6b0807d3023a2b77e419fad39de60b64819f8e-3840x2160.png"
+        "url": "/plangora/teachmecodeIG.png"
       }
     },
     "extraImage4": {
       "alt": null,
       "asset": {
         "_id": "image-ff8caaf6ce94d45f52c6ee1cea0dcad02fea2656-5840x8192-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/ff8caaf6ce94d45f52c6ee1cea0dcad02fea2656-5840x8192.png"
+        "url": "/plangora/thepetalstackCover.png"
       }
     },
     "extraImage5": null,
@@ -1823,13 +1829,13 @@ const projectDetails = {
       {
         "asset": {
           "_id": "file-fbf0589d28a71833aade0e94c9adad9d6f8aa128-jpg",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/fbf0589d28a71833aade0e94c9adad9d6f8aa128.jpg"
+          "url": "/plangora/rustaceanstation.png"
         }
       },
       {
         "asset": {
           "_id": "file-47c55ecbeb39b84ee03aa3c71ed74cf923c383da-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/47c55ecbeb39b84ee03aa3c71ed74cf923c383da.png"
+          "url": "/plangora/rust_guest_question.jpg"
         }
       }
     ],
@@ -1876,14 +1882,14 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-fefa4ba1e6821e5444dc0d0a3901656568d8c8b9-3840x4320-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/fefa4ba1e6821e5444dc0d0a3901656568d8c8b9-3840x4320.png"
+        "url": "/plangora/plangora1.png"
       }
     },
     "processTitle": "Plangora",
     "projectBanner": {
       "asset": {
         "_id": "image-9c83d6dfbd44bf3f8ad4d10a306aa7d36309ba76-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/9c83d6dfbd44bf3f8ad4d10a306aa7d36309ba76-3840x2160.png"
+        "url": "/plangora/plangoraCover.png"
       }
     },
     "projectButtonColor": null,
@@ -1993,7 +1999,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-ee71d9cc8e0d15ac276e01bb07ca1d2f38eb4dcb-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/ee71d9cc8e0d15ac276e01bb07ca1d2f38eb4dcb-3840x2160.png"
+        "url": "/hotel/Hotel - 1.png"
       }
     },
     "projectButtonColor": "#FBF8F4",
@@ -2128,14 +2134,14 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-f700cb7e7343e758c4118ee97ccc9840564f10db-1920x2566-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/f700cb7e7343e758c4118ee97ccc9840564f10db-1920x2566.png"
+        "url": "/cynderian/cynderianwireframes1.png"
       }
     },
     "designSystemImage2": {
       "alt": null,
       "asset": {
         "_id": "image-00cd9c4e9918f88b4479dc133df7ec243092395e-1920x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/00cd9c4e9918f88b4479dc133df7ec243092395e-1920x2160.png"
+        "url": "/cynderian/cynderianwireframes2.png"
       }
     },
     "designSystemTitle": "Wireframes",
@@ -2263,15 +2269,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-943c499c30d5c3a8a27a5ae15c4af004cab02b98-1920x2361-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/943c499c30d5c3a8a27a5ae15c4af004cab02b98-1920x2361.png"
+          "_id": "image-b8bd3b7990d4dd5d38ae4ea7107f061a4980dd1d-1920x1742-png",
+          "url": "/cynderian/cynderianfullold.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-a845adf751a22f7a2592050f5d6e8fc06399f6b8-1920x2943-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/a845adf751a22f7a2592050f5d6e8fc06399f6b8-1920x2943.png"
+          "_id": "image-36801d420c434e7b5be95417a6a5df3e97906042-1920x1861-png",
+          "url": "/cynderian/cynderianfull.png"
         }
       }
     ],
@@ -2279,22 +2285,8 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-36801d420c434e7b5be95417a6a5df3e97906042-1920x1861-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/36801d420c434e7b5be95417a6a5df3e97906042-1920x1861.png"
-        }
-      },
-      {
-        "alt": null,
-        "asset": {
-          "_id": "image-b8bd3b7990d4dd5d38ae4ea7107f061a4980dd1d-1920x1742-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b8bd3b7990d4dd5d38ae4ea7107f061a4980dd1d-1920x1742.png"
-        }
-      },
-      {
-        "alt": null,
-        "asset": {
-          "_id": "image-b55221323951484cba5fe93e220adf5b82e6698f-1920x772-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b55221323951484cba5fe93e220adf5b82e6698f-1920x772.png"
+          "_id": "image-00cd9c4e9918f88b4479dc133df7ec243092395e-1920x2160-png",
+          "url": "/cynderian/cynderianconnectoldnew.png"
         }
       }
     ],
@@ -2303,32 +2295,47 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-b7b45969a4ace8699995e4ff6abfe4560bfab093-3750x4260-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b7b45969a4ace8699995e4ff6abfe4560bfab093-3750x4260.png"
-        }
-      },
-      {
-        "alt": null,
-        "asset": {
-          "_id": "image-23c340a1be0db49e6179589a84c2f3f055237eef-3750x5076-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/23c340a1be0db49e6179589a84c2f3f055237eef-3750x5076.png"
+          "url": "/cynderian/cynderianservices.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-5db52175b30509e703f92978ba882686285b67d5-3750x3442-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/5db52175b30509e703f92978ba882686285b67d5-3750x3442.png"
+          "url": "/cynderian/cynderianstartupsupport.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-b30f4dc0a74c1c9fd595dbd81a9e0e4e9b354b83-2880x3552-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b30f4dc0a74c1c9fd595dbd81a9e0e4e9b354b83-2880x3552.png"
+          "url": "/cynderian/cynderianteam.png"
+        }
+      },
+      {
+        "alt": null,
+        "asset": {
+          "_id": "image-a845adf751a22f7a2592050f5d6e8fc06399f6b8-1920x2943-png",
+          "url": "/cynderian/cynderianexplore.png"
         }
       }
     ],
-    "extraGallery4": null,
+    "extraGallery4": [
+      {
+        "alt": null,
+        "asset": {
+          "_id": "image-943c499c30d5c3a8a27a5ae15c4af004cab02b98-1920x2361-png",
+          "url": "/cynderian/cynderiandesignoldnew.png"
+        }
+      },
+      {
+        "alt": null,
+        "asset": {
+          "_id": "image-b55221323951484cba5fe93e220adf5b82e6698f-1920x772-png",
+          "url": "/cynderian/cynderianpopupmodal.png"
+        }
+      }
+    ],
     "extraGallery5": null,
     "extraGallery6": null,
     "extraGallery7": null,
@@ -2352,11 +2359,11 @@ const projectDetails = {
       {
         "asset": {
           "_id": "file-00cd9c4e9918f88b4479dc133df7ec243092395e-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/00cd9c4e9918f88b4479dc133df7ec243092395e.png"
+          "url": "/cynderian/test.png"
         }
       }
     ],
-    "gifTitle": null,
+    "gifTitle": "Information Architecture",
     "goal": [
       {
         "_key": "95947aff37d0",
@@ -2427,14 +2434,14 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-825c302afa3f25f5b9b30ea543c171742ff07bc6-1920x1080-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/825c302afa3f25f5b9b30ea543c171742ff07bc6-1920x1080.png"
+        "url": "/cynderian/cynderiansitemap.png"
       }
     },
-    "processTitle": "Information Architecture",
+    "processTitle": "The Breakdown",
     "projectBanner": {
       "asset": {
         "_id": "image-b9e1c6519464fe059e67a1893b2f49f3f0eac082-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/b9e1c6519464fe059e67a1893b2f49f3f0eac082-1920x1080.jpg"
+        "url": "/cynderian/cynderian.jpg"
       }
     },
     "projectButtonColor": null,
@@ -2515,49 +2522,49 @@ const projectDetails = {
       {
         "asset": {
           "_id": "image-6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119-3842x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119-3842x2004.png"
+          "url": "/trials/Trials_LM.png"
         }
       },
       {
         "asset": {
           "_id": "image-9caa5e1296a6e8af82277c0d22f4b75c63b1517b-3842x2002-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9caa5e1296a6e8af82277c0d22f4b75c63b1517b-3842x2002.png"
+          "url": "/trials/Trials_DM.png"
         }
       },
       {
         "asset": {
           "_id": "image-f7b017274126d60ae1a91e9ee5be73da1ea6e00b-3840x2006-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/f7b017274126d60ae1a91e9ee5be73da1ea6e00b-3840x2006.png"
+          "url": "/trials/Trials_Main_LM.png"
         }
       },
       {
         "asset": {
           "_id": "image-335e6ebc5ccc144180bd23a3caba1606aec8d5f8-3844x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/335e6ebc5ccc144180bd23a3caba1606aec8d5f8-3844x2004.png"
+          "url": "/trials/Trials_Main_DM.png"
         }
       },
       {
         "asset": {
           "_id": "image-89692782ca59d0e5e77c80315d381255f0603a53-3842x2002-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/89692782ca59d0e5e77c80315d381255f0603a53-3842x2002.png"
+          "url": "/trials/Templates_Main_LM.png"
         }
       },
       {
         "asset": {
           "_id": "image-209e3c8b3435638d5d749b5db943137c8ad76b09-3840x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/209e3c8b3435638d5d749b5db943137c8ad76b09-3840x2004.png"
+          "url": "/trials/Templates_Main_DM.png"
         }
       },
       {
         "asset": {
           "_id": "image-01d60ad3e709b78ce896bdc27490ad7dafb94c3b-3842x2002-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/01d60ad3e709b78ce896bdc27490ad7dafb94c3b-3842x2002.png"
+          "url": "/trials/Settings_LM.png"
         }
       },
       {
         "asset": {
           "_id": "image-beba86951c8dc3a198df29ef0ff7372a338d1e8d-3842x2002-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/beba86951c8dc3a198df29ef0ff7372a338d1e8d-3842x2002.png"
+          "url": "/trials/Settings_DM.png"
         }
       }
     ],
@@ -2565,7 +2572,7 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-9b5c2f9506352561707f1560b70bc657a8bc594f-3840x4320-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/9b5c2f9506352561707f1560b70bc657a8bc594f-3840x4320.png"
+        "url": "/trials/Trials_DesignSyetem.png"
       }
     },
     "designSystemImage2": null,
@@ -2736,15 +2743,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-0f29a534386819aa72beb9dc22a1726a82b4c5b5-6528x2240-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/0f29a534386819aa72beb9dc22a1726a82b4c5b5-6528x2240.png"
+          "_id": "image-4ad39340751c100afa0c1c2d4afc7b01d7ed4071-3840x1502-png",
+          "url": "/trials/IA_Admin.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-acb64a12ff2910de2b7decbbd4ab928ae822552d-3734x1408-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/acb64a12ff2910de2b7decbbd4ab928ae822552d-3734x1408.png"
+          "_id": "image-89692782ca59d0e5e77c80315d381255f0603a53-3842x2002-png",
+          "url": "/trials/IA_MonitorView.png"
         }
       }
     ],
@@ -2752,29 +2759,29 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-839a0ec03e2aa8de1373576777e0c7319d977630-3842x2006-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/839a0ec03e2aa8de1373576777e0c7319d977630-3842x2006.png"
+          "_id": "image-templates-lm-3842x2002-png",
+          "url": "/trials/Templates_LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-8fe85426349dd15734da8e4a96883a5dad84ed72-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/8fe85426349dd15734da8e4a96883a5dad84ed72-2880x2048.png"
+          "_id": "image-templates-grid-view-3842x2002-png",
+          "url": "/trials/Templates - Grid View.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-89692782ca59d0e5e77c80315d381255f0603a53-3842x2002-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/89692782ca59d0e5e77c80315d381255f0603a53-3842x2002.png"
+          "url": "/trials/Templates_Main_LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-cd22b82a96444e603189b6845ecdec6c58ffe9b7-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/cd22b82a96444e603189b6845ecdec6c58ffe9b7-2880x2048.png"
+          "_id": "image-templates-main-lm-new-3842x2002-png",
+          "url": "/trials/Templates_Main_LM_New.png"
         }
       }
     ],
@@ -2782,43 +2789,43 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-b50f5ba7c1d8fe3358b939c7d39c66c3e699443f-3840x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b50f5ba7c1d8fe3358b939c7d39c66c3e699443f-3840x2004.png"
+          "_id": "image-users-lm-png",
+          "url": "/trials/Users_LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-257bc4377459471596ad74927d3b4b776c64ac7b-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/257bc4377459471596ad74927d3b4b776c64ac7b-2880x2048.png"
+          "_id": "image-users-lm-new-png",
+          "url": "/trials/Users_LM_New.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-3018184f18052f1240811caf30e14bdade3499e3-3840x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/3018184f18052f1240811caf30e14bdade3499e3-3840x2004.png"
+          "_id": "image-users-main1-lm-png",
+          "url": "/trials/Users_Main1_LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-c676e2542ccf4acad6a293724109a4db2dafc4a2-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c676e2542ccf4acad6a293724109a4db2dafc4a2-2880x2048.png"
+          "_id": "image-users-main1-lm-new-png",
+          "url": "/trials/Users_Main1_LM_New.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-ae7bff05b91a2487db35c38171d298dd5c0580e8-3842x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ae7bff05b91a2487db35c38171d298dd5c0580e8-3842x2004.png"
+          "_id": "image-users-main2-lm-png",
+          "url": "/trials/Users_Main2_LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-070ffabaec9f39f19745e3b9aa7acfc83a7c01cd-2880x2048-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/070ffabaec9f39f19745e3b9aa7acfc83a7c01cd-2880x2048.jpg"
+          "_id": "image-users-main2-lm-new-png",
+          "url": "/trials/Users_Main2_LM_New.png"
         }
       }
     ],
@@ -2826,15 +2833,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-9eb1cc71fb95da4d348cc08abc50691a79db1be5-3842x2004-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9eb1cc71fb95da4d348cc08abc50691a79db1be5-3842x2004.png"
+          "_id": "image-participants-auditlog-lm-png",
+          "url": "/trials/Participants_AuditLog_LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-aa46a63a0b0c603a66afc81eb818fd692f90ef44-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/aa46a63a0b0c603a66afc81eb818fd692f90ef44-2880x2048.png"
+          "_id": "image-detailed-audit-logs-png",
+          "url": "/trials/Detailed Page - Audit Logs - Style 1.png"
         }
       }
     ],
@@ -2842,29 +2849,29 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-90c6e4ad45765a42fa3f6aac525c3b2044cd8ae5-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/90c6e4ad45765a42fa3f6aac525c3b2044cd8ae5-2880x2048.png"
+          "_id": "image-dashboard-lm-png",
+          "url": "/trials/Dashboard - LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-2a223e0c97800620100a12dab1353a2edccb374b-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/2a223e0c97800620100a12dab1353a2edccb374b-2880x2048.png"
+          "_id": "image-dashboard-dm-png",
+          "url": "/trials/Dashboard - DM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-b91161fe8a012a37c7ccabea33cf304b7535b283-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b91161fe8a012a37c7ccabea33cf304b7535b283-2880x2048.png"
+          "_id": "image-visits-week-lm-png",
+          "url": "/trials/Visits - Week - LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-c9eaa370dbfad5516db65d622d50cc605e2db1c1-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c9eaa370dbfad5516db65d622d50cc605e2db1c1-2880x2048.png"
+          "_id": "image-ed69ad2842a3a9c5cca7e805b8d32757703d280b-2880x2048-png",
+          "url": "/trials/Visits - Week - DM.png"
         }
       }
     ],
@@ -2872,29 +2879,29 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-ae1c1d2871268b3ec31ab0914add6daa6767a8b5-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ae1c1d2871268b3ec31ab0914add6daa6767a8b5-2880x2048.png"
+          "_id": "image-messenger1-lm-png",
+          "url": "/trials/Messenger 1 - LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-ed69ad2842a3a9c5cca7e805b8d32757703d280b-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ed69ad2842a3a9c5cca7e805b8d32757703d280b-2880x2048.png"
+          "_id": "image-messenger1-dm-png",
+          "url": "/trials/Messenger 1 - DM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-5a15ee926251eedb64a367dbb22d590b2d7f2321-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/5a15ee926251eedb64a367dbb22d590b2d7f2321-2880x2048.png"
+          "_id": "image-messenger2-lm-png",
+          "url": "/trials/Messenger 2 - LM.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-112f883e80a12f23336130ebbf6566fd114fd94c-2880x2048-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/112f883e80a12f23336130ebbf6566fd114fd94c-2880x2048.png"
+          "_id": "image-messenger2-dm-png",
+          "url": "/trials/Messenger 2 - DM.png"
         }
       }
     ],
@@ -2902,29 +2909,29 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-489ca6e73ed5497c4024f1cba6f66f8a562ce28d-1540x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/489ca6e73ed5497c4024f1cba6f66f8a562ce28d-1540x1080.gif"
+          "_id": "file-6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119-gif",
+          "url": "/trials/Login.gif"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-f26067cb93949b452640a3a50c777b0b45d9cf40-1540x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/f26067cb93949b452640a3a50c777b0b45d9cf40-1540x1080.gif"
+          "_id": "file-f8283827086a8e09b6502b2fa0413e55a378671c-gif",
+          "url": "/trials/ShowHideColumns_Trials.gif"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-e84132672543e53770bd2f3d26647ef002a0071e-1540x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/e84132672543e53770bd2f3d26647ef002a0071e-1540x1080.gif"
+          "_id": "file-9caa5e1296a6e8af82277c0d22f4b75c63b1517b-gif",
+          "url": "/trials/NewComponent.gif"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-d2922843374f1d6d3a1f07395de4d60c0948d409-1540x1080-gif",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/d2922843374f1d6d3a1f07395de4d60c0948d409-1540x1080.gif"
+          "_id": "file-8dec9b24c96942060e7bd3c5011e9b66f1e87e1c-gif",
+          "url": "/trials/NewForm.gif"
         }
       }
     ],
@@ -2932,22 +2939,22 @@ const projectDetails = {
     "extraImage1": {
       "alt": null,
       "asset": {
-        "_id": "image-fbe40eff27925e5dd803dba89dde497af4950743-2560x2496-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/fbe40eff27925e5dd803dba89dde497af4950743-2560x2496.png"
+        "_id": "image-4b8d907a93b3fbbaff4cc062de0939c775833def-3840x3970-png",
+        "url": "/trials/asIWantToSoThat.png"
       }
     },
     "extraImage2": {
       "alt": null,
       "asset": {
-        "_id": "image-4b8d907a93b3fbbaff4cc062de0939c775833def-3840x3970-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/4b8d907a93b3fbbaff4cc062de0939c775833def-3840x3970.png"
+        "_id": "image-209e3c8b3435638d5d749b5db943137c8ad76b09-3840x2006-png",
+        "url": "/trials/FirstGlance.png"
       }
     },
     "extraImage3": {
       "alt": null,
       "asset": {
-        "_id": "image-4ad39340751c100afa0c1c2d4afc7b01d7ed4071-3840x1502-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/4ad39340751c100afa0c1c2d4afc7b01d7ed4071-3840x1502.png"
+        "_id": "image-fbe40eff27925e5dd803dba89dde497af4950743-2560x2496-png",
+        "url": "/trials/Major Pain Points.png"
       }
     },
     "extraImage4": null,
@@ -3000,38 +3007,38 @@ const projectDetails = {
     "gifGallery": [
       {
         "asset": {
-          "_id": "file-6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119.png"
+          "_id": "image-6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119-3842x2004-png",
+          "url": "/trials/Trials_LM.png"
         }
       },
       {
         "asset": {
-          "_id": "file-f8283827086a8e09b6502b2fa0413e55a378671c-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/f8283827086a8e09b6502b2fa0413e55a378671c.png"
+          "_id": "image-trials-lm-new-3842x2004-png",
+          "url": "/trials/Trials_LM_New.png"
         }
       },
       {
         "asset": {
-          "_id": "file-9caa5e1296a6e8af82277c0d22f4b75c63b1517b-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/9caa5e1296a6e8af82277c0d22f4b75c63b1517b.png"
+          "_id": "image-9caa5e1296a6e8af82277c0d22f4b75c63b1517b-3842x2002-png",
+          "url": "/trials/Trials_DM.png"
         }
       },
       {
         "asset": {
-          "_id": "file-8dec9b24c96942060e7bd3c5011e9b66f1e87e1c-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/8dec9b24c96942060e7bd3c5011e9b66f1e87e1c.png"
+          "_id": "image-trials-dm-new-3842x2002-png",
+          "url": "/trials/Trials_DM_New.png"
         }
       },
       {
         "asset": {
-          "_id": "file-335e6ebc5ccc144180bd23a3caba1606aec8d5f8-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/335e6ebc5ccc144180bd23a3caba1606aec8d5f8.png"
+          "_id": "image-f7b017274126d60ae1a91e9ee5be73da1ea6e00b-3840x2006-png",
+          "url": "/trials/Trials_Main_LM.png"
         }
       },
       {
         "asset": {
-          "_id": "file-df0684b808dcf4e11801928e43fa8c54f81754ce-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/df0684b808dcf4e11801928e43fa8c54f81754ce.png"
+          "_id": "image-trials-main-lm-new-3840x2006-png",
+          "url": "/trials/Trials_Main_LM_New.png"
         }
       }
     ],
@@ -3152,7 +3159,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-a21229fe8c5b78ff4ed4203e981868b0f9371d18-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/a21229fe8c5b78ff4ed4203e981868b0f9371d18-3840x2160.png"
+        "url": "/trials/TrialsHomeBanner.png"
       }
     },
     "projectButtonColor": "#44106B",
@@ -3235,38 +3242,26 @@ const projectDetails = {
     "designSystemGallery": [
       {
         "asset": {
-          "_id": "image-ac90dcfc72677c96ee96e8f163f55ce29e4aea16-1920x4216-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ac90dcfc72677c96ee96e8f163f55ce29e4aea16-1920x4216.jpg"
+          "_id": "datagoSiteComponents",
+          "url": "/datagosite/datagoSiteComponents.jpg"
         }
       },
       {
         "asset": {
-          "_id": "image-9c7bd68c61c84a2fe3ae326ea24d65c984a48690-1920x3255-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9c7bd68c61c84a2fe3ae326ea24d65c984a48690-1920x3255.jpg"
+          "_id": "datagoSiteIconsLogo",
+          "url": "/datagosite/datagoSiteIconsLogo.jpg"
         }
       },
       {
         "asset": {
-          "_id": "image-8b9573d9f0195f18c031c21b5806f608974d30c5-1920x3183-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/8b9573d9f0195f18c031c21b5806f608974d30c5-1920x3183.jpg"
+          "_id": "datagoSiteColors",
+          "url": "/datagosite/datagoSiteColors.jpg"
         }
       },
       {
         "asset": {
-          "_id": "image-91f2e8895d28ef750643d7c66b5add1c6973ec8f-1920x2131-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/91f2e8895d28ef750643d7c66b5add1c6973ec8f-1920x2131.jpg"
-        }
-      },
-      {
-        "asset": {
-          "_id": "image-b89a1c0734bce25f8aff719315b56e06e1bc0e85-1920x2885-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b89a1c0734bce25f8aff719315b56e06e1bc0e85-1920x2885.jpg"
-        }
-      },
-      {
-        "asset": {
-          "_id": "image-a08cc5fab0b394b6680092152ec1b0b835f265c9-1920x2885-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/a08cc5fab0b394b6680092152ec1b0b835f265c9-1920x2885.jpg"
+          "_id": "datagoSiteTypography2",
+          "url": "/datagosite/datagoSiteTypography2.jpg"
         }
       }
     ],
@@ -3366,15 +3361,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-bd54752fe88582d5ae99bf36ab51e0afd358a328-1920x4409-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/bd54752fe88582d5ae99bf36ab51e0afd358a328-1920x4409.jpg"
+          "_id": "datagoSite_Home_Old",
+          "url": "/datagosite/datagoSite_Home_Old.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-39bec8ed7e7362920567b78c5bf2bf748dd4dda6-1920x4660-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/39bec8ed7e7362920567b78c5bf2bf748dd4dda6-1920x4660.jpg"
+          "_id": "datagoSite_Home_New",
+          "url": "/datagosite/datagoSite_Home_New.jpg"
         }
       }
     ],
@@ -3382,15 +3377,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-3625cfd4696f65d12530578827c885cce54159c1-1920x2117-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/3625cfd4696f65d12530578827c885cce54159c1-1920x2117.jpg"
+          "_id": "datagoSite_Services_Old",
+          "url": "/datagosite/datagoSite_Services_Old.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-d7a8d8a00a008962c5abbfe6d597b45aa87c7ab8-1920x1929-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/d7a8d8a00a008962c5abbfe6d597b45aa87c7ab8-1920x1929.jpg"
+          "_id": "datagoSite_Services_New",
+          "url": "/datagosite/datagoSite_Services_New.jpg"
         }
       }
     ],
@@ -3398,15 +3393,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-36118ad6037d70b456745f43b7349833a7ddaeb1-1920x2294-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/36118ad6037d70b456745f43b7349833a7ddaeb1-1920x2294.jpg"
+          "_id": "datagoSite_Database_Old",
+          "url": "/datagosite/datagoSite_Database_Old.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-793d314ba53d170f6a1088a1e98c4a20ac74f178-1920x3861-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/793d314ba53d170f6a1088a1e98c4a20ac74f178-1920x3861.jpg"
+          "_id": "datagoSite_Database_New",
+          "url": "/datagosite/datagoSite_Database_New.jpg"
         }
       }
     ],
@@ -3414,15 +3409,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-64b800c78ee53cc462a8404d26db0df463464c30-1920x1387-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/64b800c78ee53cc462a8404d26db0df463464c30-1920x1387.jpg"
+          "_id": "datagoSite_AboutUs_Old",
+          "url": "/datagosite/datagoSite_AboutUs_Old.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-360dec8c56db52f9b245cdc0b6e12fa8d56a738b-1920x1652-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/360dec8c56db52f9b245cdc0b6e12fa8d56a738b-1920x1652.jpg"
+          "_id": "datagoSite_AboutUs_New",
+          "url": "/datagosite/datagoSite_AboutUs_New.jpg"
         }
       }
     ],
@@ -3430,15 +3425,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-bd60efedd85ef9ca6ea73c46ea79399ed709d746-1920x2283-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/bd60efedd85ef9ca6ea73c46ea79399ed709d746-1920x2283.jpg"
+          "_id": "datagoSite_ContactUs_Old",
+          "url": "/datagosite/datagoSite_ContactUs_Old.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-e23856d436a7984028df685c57b2079580bfb556-1920x1507-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/e23856d436a7984028df685c57b2079580bfb556-1920x1507.jpg"
+          "_id": "datagoSite_ContactUs_New",
+          "url": "/datagosite/datagoSite_ContactUs_New.jpg"
         }
       }
     ],
@@ -3446,15 +3441,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-6c44fa8ef967b5b90f05d17f43ee76157b10da97-1920x1318-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/6c44fa8ef967b5b90f05d17f43ee76157b10da97-1920x1318.jpg"
+          "_id": "datagoSite_Terms_Old",
+          "url": "/datagosite/datagoSite_Terms_Old.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-b9224902d845bf6d7e27f14d7f3dd0589dc1e0ea-1920x1585-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/b9224902d845bf6d7e27f14d7f3dd0589dc1e0ea-1920x1585.jpg"
+          "_id": "datagoSite_Terms_New",
+          "url": "/datagosite/datagoSite_Terms_New.jpg"
         }
       }
     ],
@@ -3464,7 +3459,7 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-a94278915b024e45f425b9497744feb2a3e7cf9a-1920x1291-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/a94278915b024e45f425b9497744feb2a3e7cf9a-1920x1291.jpg"
+        "url": "/datagotech/Colors.jpg"
       }
     },
     "extraImage2": null,
@@ -3527,8 +3522,8 @@ const projectDetails = {
     "processTitle": "The Redesign",
     "projectBanner": {
       "asset": {
-        "_id": "image-7676804cfe15123da7627e2e3fba1e83fd52568c-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/7676804cfe15123da7627e2e3fba1e83fd52568c-1920x1080.jpg"
+        "_id": "datagoSiteHome",
+        "url": "/datagosite/datagoSiteHome.jpg"
       }
     },
     "projectButtonColor": null,
@@ -3706,14 +3701,14 @@ const projectDetails = {
     "designSystemGallery": [
       {
         "asset": {
-          "_id": "image-1b045ff93df943ab3739fed2eaefb89c66dbaff4-2880x3108-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/1b045ff93df943ab3739fed2eaefb89c66dbaff4-2880x3108.png"
+          "_id": "file-1dadf68f42408f2ff558726a61bfbd8051734e69-png",
+          "url": "/transigo/transigoForm_old.png"
         }
       },
       {
         "asset": {
-          "_id": "image-d0f0813cc9976d02f6d566a9b0a48a83fbc4721a-2880x3108-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/d0f0813cc9976d02f6d566a9b0a48a83fbc4721a-2880x3108.png"
+          "_id": "file-6411ffc2887fe034efa9d3a70489dca4f8a0e164-png",
+          "url": "/transigo/transigoForm.png"
         }
       }
     ],
@@ -3753,15 +3748,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-7d82e74e4516f061d6eda68c45d3095dfff40d3c-6040x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/7d82e74e4516f061d6eda68c45d3095dfff40d3c-6040x2160.png"
+          "_id": "image-26d30f57883062c17d6d4dfa211b36d563ba50da-4696x2160-png",
+          "url": "/transigo/Quotas_old.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-26d30f57883062c17d6d4dfa211b36d563ba50da-4696x2160-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/26d30f57883062c17d6d4dfa211b36d563ba50da-4696x2160.png"
+          "_id": "image-7d82e74e4516f061d6eda68c45d3095dfff40d3c-6040x2160-png",
+          "url": "/transigo/Quotas.png"
         }
       }
     ],
@@ -3776,7 +3771,7 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-aba9afe20d53a5aa5fce17ebc4d6dfc61cd3d30b-2496x2378-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/aba9afe20d53a5aa5fce17ebc4d6dfc61cd3d30b-2496x2378.png"
+        "url": "/transigo/clickables.png"
       }
     },
     "extraImage2": null,
@@ -3839,14 +3834,14 @@ const projectDetails = {
     "gifGallery": [
       {
         "asset": {
-          "_id": "file-6411ffc2887fe034efa9d3a70489dca4f8a0e164-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/6411ffc2887fe034efa9d3a70489dca4f8a0e164.png"
+          "_id": "image-d0f0813cc9976d02f6d566a9b0a48a83fbc4721a-2880x3108-png",
+          "url": "/transigo/Exporters_old.png"
         }
       },
       {
         "asset": {
-          "_id": "file-1dadf68f42408f2ff558726a61bfbd8051734e69-png",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/1dadf68f42408f2ff558726a61bfbd8051734e69.png"
+          "_id": "image-1b045ff93df943ab3739fed2eaefb89c66dbaff4-2880x3108-png",
+          "url": "/transigo/Exporters.png"
         }
       }
     ],
@@ -3879,7 +3874,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-1dadf68f42408f2ff558726a61bfbd8051734e69-3840x2160-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/1dadf68f42408f2ff558726a61bfbd8051734e69-3840x2160.png"
+        "url": "/transigo/Exporters.png"
       }
     },
     "projectButtonColor": null,
@@ -3973,14 +3968,14 @@ const projectDetails = {
     "designSystemGallery": [
       {
         "asset": {
-          "_id": "image-6f1ed9adde16532b3913effc376afd4ead69631d-1191x1041-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/6f1ed9adde16532b3913effc376afd4ead69631d-1191x1041.png"
+          "_id": "ggez-persona3",
+          "url": "/ggez/persona3.png"
         }
       },
       {
         "asset": {
-          "_id": "image-985cedc895592bf53086723539832f3191128740-992x1056-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/985cedc895592bf53086723539832f3191128740-992x1056.png"
+          "_id": "ggez-persona4",
+          "url": "/ggez/persona4.png"
         }
       }
     ],
@@ -4414,22 +4409,22 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-40ecb2f0994bec43195217e20c847a211b20c462-1609x1080-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/40ecb2f0994bec43195217e20c847a211b20c462-1609x1080.jpg"
+          "_id": "ggez-homesketch",
+          "url": "/ggez/homesketch.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-df94364d7959c66fea1d3bd94b99504292926d2b-1917x2786-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/df94364d7959c66fea1d3bd94b99504292926d2b-1917x2786.png"
+          "_id": "ggez-paperwireframe",
+          "url": "/ggez/paperwireframe.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-02121bfe2c0118e5decb3e912250969c4883d8be-1920x1080-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/02121bfe2c0118e5decb3e912250969c4883d8be-1920x1080.png"
+          "_id": "ggez-homewireframe",
+          "url": "/ggez/homewireframe.png"
         }
       }
     ],
@@ -4437,22 +4432,22 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-c8ede519d9732c00588232167a324629108baff5-1643x364-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/c8ede519d9732c00588232167a324629108baff5-1643x364.png"
+          "_id": "ggez-googlefetch",
+          "url": "/ggez/googlefetch.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-cb7503ac6571edece2be635e089f4359acdc9b53-1018x153-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/cb7503ac6571edece2be635e089f4359acdc9b53-1018x153.png"
+          "_id": "ggez-metatags",
+          "url": "/ggez/metatags.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-8150b3fa77d1ede8b05997c9db0d616e7d77f776-2060x1470-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/8150b3fa77d1ede8b05997c9db0d616e7d77f776-2060x1470.png"
+          "_id": "ggez-keywordanalysis",
+          "url": "/ggez/keywordanalysis.png"
         }
       }
     ],
@@ -4460,29 +4455,29 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-8bdb3342bebce437af7c95230f0b165201ba84f8-894x663-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/8bdb3342bebce437af7c95230f0b165201ba84f8-894x663.png"
+          "_id": "ggez-thinkwithgoogle",
+          "url": "/ggez/thinkwithgoogle.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-ad1e1572fa8ae49098fb14b1e344c95a830242ae-875x663-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ad1e1572fa8ae49098fb14b1e344c95a830242ae-875x663.png"
+          "_id": "ggez-thinkwithgoogle2",
+          "url": "/ggez/thinkwithgoogle2.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-aa887f327ad63d624c91a01903d6e3b91c4c22ec-891x820-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/aa887f327ad63d624c91a01903d6e3b91c4c22ec-891x820.jpg"
+          "_id": "ggez-pagespeed",
+          "url": "/ggez/pagespeed.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-9e7b4af62c9396e9d5a4b5f24423ff8980b76ca9-896x778-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9e7b4af62c9396e9d5a4b5f24423ff8980b76ca9-896x778.jpg"
+          "_id": "ggez-pagespeed2",
+          "url": "/ggez/pagespeed2.jpg"
         }
       }
     ],
@@ -4490,15 +4485,15 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-52dab991e731d1a16540a30a189a989b5c5f8724-1920x954-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/52dab991e731d1a16540a30a189a989b5c5f8724-1920x954.jpg"
+          "_id": "ggez-wavetool",
+          "url": "/ggez/wavetool.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-746a7f8f487c6d07a215368839c33dc9715a126c-1920x1705-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/746a7f8f487c6d07a215368839c33dc9715a126c-1920x1705.jpg"
+          "_id": "ggez-powermapper",
+          "url": "/ggez/powermapper.jpg"
         }
       }
     ],
@@ -4506,29 +4501,29 @@ const projectDetails = {
       {
         "alt": null,
         "asset": {
-          "_id": "image-ce86d412e9ea293920e9bf4045e297cbe5994b8f-1434x1022-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/ce86d412e9ea293920e9bf4045e297cbe5994b8f-1434x1022.png"
+          "_id": "ggez-facebook",
+          "url": "/ggez/facebook.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-806cd32f33124cf710f4a56fe2676f2f54953d66-1528x917-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/806cd32f33124cf710f4a56fe2676f2f54953d66-1528x917.png"
+          "_id": "ggez-instagram",
+          "url": "/ggez/instagram.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-a7930dcc148dd4677e123c3bd5b4099c3148a22a-1901x949-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/a7930dcc148dd4677e123c3bd5b4099c3148a22a-1901x949.png"
+          "_id": "ggez-twitter1",
+          "url": "/ggez/twitter1.png"
         }
       },
       {
         "alt": null,
         "asset": {
-          "_id": "image-89b056557190076c72232d04a7636d7922674e09-935x775-png",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/89b056557190076c72232d04a7636d7922674e09-935x775.png"
+          "_id": "ggez-twitter2",
+          "url": "/ggez/twitter2.png"
         }
       }
     ],
@@ -4538,43 +4533,43 @@ const projectDetails = {
     "extraImage1": {
       "alt": null,
       "asset": {
-        "_id": "image-3018948d813d485eb32a0ffd5f416b8002d9eea6-1917x2895-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/3018948d813d485eb32a0ffd5f416b8002d9eea6-1917x2895.png"
+        "_id": "ggez-ggezprototype",
+        "url": "/ggez/ggezprototype.png"
       }
     },
     "extraImage2": {
       "alt": null,
       "asset": {
-        "_id": "image-4e52e915109a5738426be216dd84d0010677f3a4-1044x804-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/4e52e915109a5738426be216dd84d0010677f3a4-1044x804.png"
+        "_id": "ggez-siteranking",
+        "url": "/ggez/siteranking.png"
       }
     },
     "extraImage3": {
       "alt": null,
       "asset": {
-        "_id": "image-c314b0e42be22cb36398fbbdd00854a89869fd20-1889x934-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/c314b0e42be22cb36398fbbdd00854a89869fd20-1889x934.png"
+        "_id": "ggez-sitemapforspider",
+        "url": "/ggez/sitemapforspider.png"
       }
     },
     "extraImage4": {
       "alt": null,
       "asset": {
-        "_id": "image-60c590d3edca37b81ab9ae863503e8a8d5e557e6-1920x1080-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/60c590d3edca37b81ab9ae863503e8a8d5e557e6-1920x1080.png"
+        "_id": "ggez-colorblindtest",
+        "url": "/ggez/colorblindtest.png"
       }
     },
     "extraImage5": {
       "alt": null,
       "asset": {
-        "_id": "image-d65070997711b595755207f6a4a769ed808ea37a-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/d65070997711b595755207f6a4a769ed808ea37a-1920x1080.jpg"
+        "_id": "ggez-3-30-3",
+        "url": "/ggez/3-30-3.jpg"
       }
     },
     "extraImage6": {
       "alt": null,
       "asset": {
-        "_id": "image-33784c0bff221a90a376238baf1190e4e7b274c5-1026x458-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/33784c0bff221a90a376238baf1190e4e7b274c5-1026x458.png"
+        "_id": "ggez-ggezfull",
+        "url": "/ggez/ggezfull.png"
       }
     },
     "extraImage7": null,
@@ -4632,14 +4627,14 @@ const projectDetails = {
     "gifGallery": [
       {
         "asset": {
-          "_id": "file-6611652ab5ae1626c57930ce7761f597d4f086de-jpg",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/6611652ab5ae1626c57930ce7761f597d4f086de.jpg"
+          "_id": "ggez-sitemap",
+          "url": "/ggez/sitemap.jpg"
         }
       },
       {
         "asset": {
-          "_id": "file-bcfc1cf4e4dfd9df5f9df8fadc4d349bf123489b-jpg",
-          "url": "https://cdn.sanity.io/files/7vv89ze2/production/bcfc1cf4e4dfd9df5f9df8fadc4d349bf123489b.jpg"
+          "_id": "ggez-userflow",
+          "url": "/ggez/userflow.jpg"
         }
       }
     ],
@@ -4865,15 +4860,15 @@ const projectDetails = {
     "processImage": {
       "alt": null,
       "asset": {
-        "_id": "image-96981ebf86e160a173486b77589d01fe47217e0e-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/96981ebf86e160a173486b77589d01fe47217e0e-1920x1080.jpg"
+        "_id": "ggez-marketresearch",
+        "url": "/ggez/MarketResearch.jpg"
       }
     },
     "processTitle": "Creative Brief",
     "projectBanner": {
       "asset": {
-        "_id": "image-edfe62e3954c4cad4c7c3f62355d3842d504e56e-1920x1080-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/edfe62e3954c4cad4c7c3f62355d3842d504e56e-1920x1080.jpg"
+        "_id": "ggez-ggezhome",
+        "url": "/ggez/ggezhome.jpg"
       }
     },
     "projectButtonColor": null,
@@ -5121,13 +5116,13 @@ const projectDetails = {
       {
         "asset": {
           "_id": "image-3d2912f5e738d0e5a751f3120f6f7fc5c9bd41e7-3323x2160-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/3d2912f5e738d0e5a751f3120f6f7fc5c9bd41e7-3323x2160.jpg"
+          "url": "/melon/melonExploration.jpg"
         }
       },
       {
         "asset": {
           "_id": "image-31e16c022cb6676df0df5147401457ecc9092c5f-3840x2160-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/31e16c022cb6676df0df5147401457ecc9092c5f-3840x2160.jpg"
+          "url": "/melon/melonExploration2.jpg"
         }
       }
     ],
@@ -5190,7 +5185,22 @@ const projectDetails = {
         "style": "normal"
       }
     ],
-    "extraBlock3": null,
+    "extraBlock3": [
+      {
+        "_key": "melonEmojiAlt",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "melonEmojiAlt0",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "Emoji Alternative"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
     "extraBlock4": null,
     "extraBlock5": null,
     "extraBlock6": null,
@@ -5205,14 +5215,14 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-7d64deae7cf662fe45c92b013d34b13a6e410565-3840x2160-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/7d64deae7cf662fe45c92b013d34b13a6e410565-3840x2160.jpg"
+          "url": "/melon/melonLogo.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-0b6e97ebdf4abc0abebead31820af2124a5c4e89-3840x2160-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/0b6e97ebdf4abc0abebead31820af2124a5c4e89-3840x2160.jpg"
+          "url": "/melon/melonEmoji3.jpg"
         }
       }
     ],
@@ -5221,28 +5231,28 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-bc8837d53a21000e8471b3602ccfd4c8b3a92412-2880x6600-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/bc8837d53a21000e8471b3602ccfd4c8b3a92412-2880x6600.jpg"
+          "url": "/melon/melonPink.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-a4d806b11c84705237aab0cd2a7df58a78ea5617-2880x6600-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/a4d806b11c84705237aab0cd2a7df58a78ea5617-2880x6600.jpg"
+          "url": "/melon/melonOrange.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-9e1380bbe16c7e269b3ab8738efdb38254611a77-2880x6600-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/9e1380bbe16c7e269b3ab8738efdb38254611a77-2880x6600.jpg"
+          "url": "/melon/melonGreen.jpg"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-f022e98f2cb8b9ffc42f5436c2c4c06288ad562a-2880x6600-jpg",
-          "url": "https://cdn.sanity.io/images/7vv89ze2/production/f022e98f2cb8b9ffc42f5436c2c4c06288ad562a-2880x6600.jpg"
+          "url": "/melon/melonBrown.jpg"
         }
       }
     ],
@@ -5256,24 +5266,30 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-6805d53b573d765cedbec2b712b11c8317aa42f1-900x612-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/6805d53b573d765cedbec2b712b11c8317aa42f1-900x612.jpg"
+        "url": "/melon/Persona.jpg"
       }
     },
     "extraImage2": {
       "alt": null,
       "asset": {
         "_id": "image-fecea9a229422dfdb2084910fcb6f1d0ca3344e9-3840x2160-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/fecea9a229422dfdb2084910fcb6f1d0ca3344e9-3840x2160.jpg"
+        "url": "/melon/melonLogoBreakdown.jpg"
       }
     },
     "extraImage3": {
       "alt": null,
       "asset": {
         "_id": "image-6029fba90ef28da0acce7eabe693b857824ff63f-3840x4320-png",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/6029fba90ef28da0acce7eabe693b857824ff63f-3840x4320.png"
+        "url": "/melon/melonStyleguide.png"
       }
     },
-    "extraImage4": null,
+    "extraImage4": {
+      "alt": null,
+      "asset": {
+        "_id": "image-melonEmoji1",
+        "url": "/melon/melonEmoji1.jpg"
+      }
+    },
     "extraImage5": null,
     "extraImage6": null,
     "extraImage7": null,
@@ -5363,7 +5379,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-ffbc2c763fe942b753e5d2eaf588223430a7d4ce-3840x2160-jpg",
-        "url": "https://cdn.sanity.io/images/7vv89ze2/production/ffbc2c763fe942b753e5d2eaf588223430a7d4ce-3840x2160.jpg"
+        "url": "/melon/melonhome.jpg"
       }
     },
     "projectButtonColor": "#B9364F",

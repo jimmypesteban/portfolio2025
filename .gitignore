@@ -22,3 +22,9 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.vercel
+
+# Large files exceeding GitHub's 100MB limit
+public/trials/Login.gif
+public/trials/ShowHideColumns_Trials.gif
+public/datagotech/Frame 261.jpg

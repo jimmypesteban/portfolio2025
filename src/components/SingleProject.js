@@ -217,22 +217,26 @@ export default function SingleProject() {
                   {singleProjectData.duration}
                 </p>
               </div>
-              <div>
-                <p className="mb-1 md:mb-2 font-bold text-[12px] font-pfFont2">
-                  MY ROLE
-                </p>
-                <p className="text-[14px] md:text-[16px]">
-                  {singleProjectData.role}
-                </p>
-              </div>
-              <div>
-                <p className="mb-1 md:mb-2 font-bold text-[12px] font-pfFont2">
-                  THE TEAM
-                </p>
-                <p className="text-[14px] md:text-[16px]">
-                  {singleProjectData.teamMembers}
-                </p>
-              </div>
+              {singleProjectData.role && (
+                <div>
+                  <p className="mb-1 md:mb-2 font-bold text-[12px] font-pfFont2">
+                    MY ROLE
+                  </p>
+                  <p className="text-[14px] md:text-[16px]">
+                    {singleProjectData.role}
+                  </p>
+                </div>
+              )}
+              {singleProjectData.teamMembers && (
+                <div>
+                  <p className="mb-1 md:mb-2 font-bold text-[12px] font-pfFont2">
+                    THE TEAM
+                  </p>
+                  <p className="text-[14px] md:text-[16px]">
+                    {singleProjectData.teamMembers}
+                  </p>
+                </div>
+              )}
               <div>
                 <p className="mb-1 md:mb-2 font-bold text-[12px] font-pfFont2">
                   TOOLS USED
@@ -249,7 +253,7 @@ export default function SingleProject() {
           <div>
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 The Breakdown
@@ -289,7 +293,7 @@ export default function SingleProject() {
      
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.processTitle}
@@ -350,7 +354,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.designSystemTitle}
@@ -375,7 +379,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Prototype
@@ -403,7 +407,7 @@ export default function SingleProject() {
 
             {/* <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.prototypeTitle}
@@ -420,7 +424,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.gifTitle}
@@ -546,7 +550,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle1}
@@ -622,7 +626,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.result}
@@ -641,7 +645,7 @@ export default function SingleProject() {
           <div>
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px]  mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px]  mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 The Goal
@@ -700,7 +704,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Process
@@ -722,7 +726,7 @@ export default function SingleProject() {
             <div className="flex flex-col mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   Design System
@@ -760,7 +764,7 @@ export default function SingleProject() {
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
             <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   Sprints and Testing
@@ -837,7 +841,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Prototype/Staging
@@ -868,7 +872,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.result}
@@ -930,7 +934,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Project Details
@@ -947,7 +951,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 The Goal
@@ -964,7 +968,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Process
@@ -982,7 +986,7 @@ export default function SingleProject() {
             <div className="flex flex-col">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   Design System
@@ -1020,7 +1024,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Prototype/Staging
@@ -1032,7 +1036,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Results and Takeaway
@@ -1095,7 +1099,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Project Details
@@ -1112,7 +1116,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 The Goal
@@ -1129,7 +1133,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Process
@@ -1147,7 +1151,7 @@ export default function SingleProject() {
             <div className="flex flex-col">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   Design System
@@ -1185,7 +1189,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Prototype/Staging
@@ -1197,7 +1201,7 @@ export default function SingleProject() {
 
             <div>
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Results and Takeaway
@@ -1217,11 +1221,11 @@ export default function SingleProject() {
           <div className="">
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div className="text-pcWhite">
-                <p className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2">
+                <p className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2">
                   {singleProjectData.processTitle}
                 </p>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 text-pcWhite mt-4">
-                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-6 rounded-[8px] bg-pcWhite/10">
+                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-4 md:p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
                       blocks={singleProjectData.extraBlock1}
@@ -1229,7 +1233,7 @@ export default function SingleProject() {
                       dataset="production"
                     />
                   </div>
-                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-6 rounded-[8px] bg-pcWhite/10">
+                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-4 md:p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
                       blocks={singleProjectData.extraBlock2}
@@ -1237,7 +1241,7 @@ export default function SingleProject() {
                       dataset="production"
                     />
                   </div>
-                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-6 rounded-[8px] bg-pcWhite/10">
+                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-4 md:p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
                       blocks={singleProjectData.extraBlock3}
@@ -1245,7 +1249,7 @@ export default function SingleProject() {
                       dataset="production"
                     />
                   </div>
-                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-6 rounded-[8px] bg-pcWhite/10">
+                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-4 md:p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
                       blocks={singleProjectData.extraBlock4}
@@ -1253,7 +1257,7 @@ export default function SingleProject() {
                       dataset="production"
                     />
                   </div>
-                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-6 rounded-[8px] bg-pcWhite/10">
+                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-4 md:p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
                       blocks={singleProjectData.extraBlock5}
@@ -1261,7 +1265,7 @@ export default function SingleProject() {
                       dataset="production"
                     />
                   </div>
-                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-6 rounded-[8px] bg-pcWhite/10">
+                  <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-medium p-4 md:p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
                       blocks={singleProjectData.extraBlock6}
@@ -1275,7 +1279,7 @@ export default function SingleProject() {
             <div className="flex flex-col mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.designSystemTitle}
@@ -1328,7 +1332,7 @@ export default function SingleProject() {
           <div className="">
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.designSystemTitle}
@@ -1341,18 +1345,19 @@ export default function SingleProject() {
                   dataset="production"
                 />
               </div>
-              <div className="mt-4">
-                <img
-                  className=""
-                  src={singleProjectData.extraImage1.asset.url}
-                  alt={singleProjectData.name}
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                {singleProjectData.designSystemGallery &&
+                  singleProjectData.designSystemGallery.map((img, index) => (
+                    <a key={index} href={img.asset.url} target="_blank">
+                      <img className="w-full" src={img.asset.url} />
+                    </a>
+                  ))}
               </div>
             </div>
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 text-center"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.processTitle}
@@ -1366,7 +1371,7 @@ export default function SingleProject() {
                   />
                 </div>
 
-                <div className="grid grid-cols-4 gap-4 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                   <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite font-semibold p-6 rounded-[8px] bg-pcWhite/10">
                     <BlockContent
                       className=""
@@ -1550,7 +1555,7 @@ export default function SingleProject() {
               </div>
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.prototypeTitle}
@@ -1563,7 +1568,7 @@ export default function SingleProject() {
             </div>
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.result}
@@ -1583,7 +1588,7 @@ export default function SingleProject() {
             <div className="flex flex-col p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.processTitle}
@@ -1618,7 +1623,7 @@ export default function SingleProject() {
             <div className="flex flex-col mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.designSystemTitle}
@@ -1666,8 +1671,7 @@ export default function SingleProject() {
                 {singleProjectData &&
                   singleProjectData.extraGallery1.map(
                     (graphicsgallery, index) => (
-                      <a href={graphicsgallery.asset.url} target="_blank">
-                        {" "}
+                      <a key={index} href={graphicsgallery.asset.url} target="_blank" className="bg-white rounded-[8px] p-6 flex items-center justify-center">
                         <img
                           className="w-full"
                           src={graphicsgallery.asset.url}
@@ -1676,11 +1680,31 @@ export default function SingleProject() {
                     )
                   )}
               </div>
+
+              {singleProjectData.extraBlock3 && (
+                <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite mt-6">
+                  <BlockContent
+                    className=""
+                    blocks={singleProjectData.extraBlock3}
+                    projectId={process.env.REACT_APP_SANITY_PROJECT_ID}
+                    dataset="production"
+                  />
+                </div>
+              )}
+              {singleProjectData.extraImage4 && (
+                <div className="flex justify-center mt-4">
+                  <img
+                    className=""
+                    src={singleProjectData.extraImage4.asset.url}
+                    alt={singleProjectData.name}
+                  />
+                </div>
+              )}
             </div>
 
             <div className="flex flex-col mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle1}
@@ -1697,7 +1721,7 @@ export default function SingleProject() {
             <div className="flex flex-col mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div className="mb-4">
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.extraTitle2}
@@ -1729,7 +1753,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 Prototype/Staging
@@ -1753,7 +1777,7 @@ export default function SingleProject() {
             <div className="flex flex-col p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.processTitle}
@@ -1781,7 +1805,7 @@ export default function SingleProject() {
                     singleProjectData.processContent.map(
                       (processContent, id) => (
                         <div
-                          className="text-pcWhite font-semibold p-6 rounded-[8px] bg-pcWhite/10"
+                          className="text-pcWhite font-semibold p-4 md:p-6 rounded-[8px] bg-pcWhite/10"
                           key={id}
                         >
                           {processContent}
@@ -1804,10 +1828,10 @@ export default function SingleProject() {
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
-                  {singleProjectData.processTitle}
+                  {singleProjectData.gifTitle || singleProjectData.processTitle}
                 </h1>
                 <div className="prose max-w-none prose-strong:text-pcWhite prose-strong:font-pfFont2 font-pfFont text-pcWhite">
                   <BlockContent
@@ -1830,7 +1854,7 @@ export default function SingleProject() {
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <div>
                 <h1
-                  className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                  className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                   style={{ color: `${singleProjectData.extraColor3}` }}
                 >
                   {singleProjectData.designSystemTitle}
@@ -1873,7 +1897,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle1}
@@ -1909,7 +1933,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle2}
@@ -1963,7 +1987,7 @@ export default function SingleProject() {
               </div>
 
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle3}
@@ -1982,11 +2006,26 @@ export default function SingleProject() {
                     )
                   )}
               </div>
+
+              {singleProjectData.extraGallery4 && (
+                <div className="grid grid-cols-1 gap-4 md:gap-8 mt-4 md:mt-8">
+                  {singleProjectData.extraGallery4.map(
+                    (graphicsgallery, index) => (
+                      <a key={index} href={graphicsgallery.asset.url} target="_blank">
+                        <img
+                          className="w-full"
+                          src={graphicsgallery.asset.url}
+                        />
+                      </a>
+                    )
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.result}
@@ -2005,7 +2044,7 @@ export default function SingleProject() {
           <div className="">
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.processTitle}
@@ -2020,7 +2059,7 @@ export default function SingleProject() {
               </div>
               <div className="flex justify-center">
                 <img
-                  className="pt-4 w-9/12"
+                  className="pt-4 w-full"
                   src={singleProjectData.processImage.asset.url}
                   alt={singleProjectData.name}
                 />
@@ -2029,7 +2068,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.designSystemTitle}
@@ -2060,7 +2099,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.gifTitle}
@@ -2086,7 +2125,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.prototypeTitle}
@@ -2094,7 +2133,7 @@ export default function SingleProject() {
               <div className="text-pcWhite mb-4">
                 <BlockContent
                   className=""
-                  blocks={singleProjectData.gifBlock}
+                  blocks={singleProjectData.prototypeBlock}
                   projectId={process.env.REACT_APP_SANITY_PROJECT_ID}
                   dataset="production"
                 />
@@ -2117,7 +2156,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle1}
@@ -2141,7 +2180,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle2}
@@ -2229,7 +2268,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle3}
@@ -2269,7 +2308,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle4}
@@ -2294,7 +2333,7 @@ export default function SingleProject() {
 
             <div className="flex flex-col p-6 md:p-10 lg:p-16 mt-6 lg:mt-12 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle5}
@@ -2343,7 +2382,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.result}
@@ -2362,7 +2401,7 @@ export default function SingleProject() {
           <div>
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.processTitle}
@@ -2417,7 +2456,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.designSystemTitle}
@@ -2462,7 +2501,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.gifTitle}
@@ -2496,7 +2535,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.prototypeTitle}
@@ -2543,7 +2582,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle2}
@@ -2577,7 +2616,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2 "
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.extraTitle1}
@@ -2616,7 +2655,7 @@ export default function SingleProject() {
           <div>
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.designSystemTitle}
@@ -2665,7 +2704,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 mb-6 lg:mb-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.gifTitle}
@@ -2724,7 +2763,7 @@ export default function SingleProject() {
 
             <div className="mt-6 lg:mt-12 p-6 md:p-10 lg:p-16 bg-pcBlack2 rounded-[8px] shadow-[0_0_8px_rgba(255,255,255,0.08)]">
               <h1
-                className="md:text-[32px] text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
+                className="text-[20px] md:text-[28px] mb-4 font-bold text-pcWhite font-pfFont2"
                 style={{ color: `${singleProjectData.extraColor3}` }}
               >
                 {singleProjectData.result}

@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+[data-scrollspy] img {
+  border-radius: 4px;
+}
+
 a.active {
   text-decoration: line-through;
   text-decoration-thickness: 2px;

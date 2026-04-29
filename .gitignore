@@ -31,6 +31,6 @@ public/images/**/*.JPG
 public/images/**/*.png
 public/images/**/*.PNG
 
-# Oversized gifs exceeding GitHub's 100MB limit
+# Oversized gifs exceeding GitHub's 100MB limit (replaced by mp4 versions)
 public/images/trials/Login.gif
 public/images/trials/ShowHideColumns_Trials.gif

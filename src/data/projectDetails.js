@@ -2911,14 +2911,14 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "file-6ed113321bf45dfbc0e6aa8c2faa93a6dc05e119-gif",
-          "url": "/trials/Login.gif"
+          "url": "/trials/Login.mp4"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "file-f8283827086a8e09b6502b2fa0413e55a378671c-gif",
-          "url": "/trials/ShowHideColumns_Trials.gif"
+          "url": "/trials/ShowHideColumns_Trials.mp4"
         }
       },
       {

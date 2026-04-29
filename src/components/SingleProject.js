@@ -29,6 +29,14 @@ export default function SingleProject() {
   const prevImage = useCallback(() => setLightbox((lb) => ({ ...lb, index: Math.max(0, lb.index - 1) })), []);
   const nextImage = useCallback(() => setLightbox((lb) => ({ ...lb, index: Math.min(lb.images.length - 1, lb.index + 1) })), []);
 
+  const renderGifItem = (url, className) => {
+    const src = resolveImage(url);
+    if (/\.mp4$/i.test(url)) {
+      return <video className={className} src={src} autoPlay loop muted playsInline />;
+    }
+    return <img className={className} src={src} />;
+  };
+
   // const transition = { duration: 0.5, ease: "easeInOut" };
   // const { scrollYProgress } = useScroll();
   var testing = "100";
@@ -467,7 +475,7 @@ export default function SingleProject() {
                   singleProjectData.extraGallery7.map((graphicsgallery, index) => (
                     <div key={index}>
                       <a href={graphicsgallery.asset.url} target="_blank">
-                        <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                        {renderGifItem(graphicsgallery.asset.url, "w-full")}
                       </a>
                       <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                     </div>
@@ -528,7 +536,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <div key={index}>
                       <a href={graphicsgallery.asset.url} target="_blank">
-                        <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                        {renderGifItem(graphicsgallery.asset.url, "w-full")}
                       </a>
                       <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                     </div>
@@ -774,7 +782,7 @@ export default function SingleProject() {
                     (graphicsgallery, index) => (
                       <div key={index}>
                         <a href={graphicsgallery.asset.url} target="_blank">
-                          <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                          {renderGifItem(graphicsgallery.asset.url, "w-full")}
                         </a>
                         <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                       </div>
@@ -872,7 +880,7 @@ export default function SingleProject() {
                     (graphicsgallery, index) => (
                       <div key={index}>
                         <a href={graphicsgallery.asset.url} target="_blank">
-                          <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                          {renderGifItem(graphicsgallery.asset.url, "w-full")}
                         </a>
                         <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                       </div>
@@ -909,7 +917,7 @@ export default function SingleProject() {
                     (graphicsgallery, index) => (
                       <div key={index}>
                         <a href={graphicsgallery.asset.url} target="_blank">
-                          <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                          {renderGifItem(graphicsgallery.asset.url, "w-full")}
                         </a>
                         <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                       </div>
@@ -2247,7 +2255,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <div key={index}>
                       <a href={graphicsgallery.asset.url} target="_blank">
-                        <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                        {renderGifItem(graphicsgallery.asset.url, "w-full")}
                       </a>
                       <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                     </div>
@@ -2680,7 +2688,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <div key={index}>
                       <a href={graphicsgallery.asset.url} target="_blank">
-                        <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                        {renderGifItem(graphicsgallery.asset.url, "w-full")}
                       </a>
                       <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                     </div>
@@ -2894,7 +2902,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <div key={index}>
                       <a href={graphicsgallery.asset.url} target="_blank">
-                        <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
+                        {renderGifItem(graphicsgallery.asset.url, "w-full")}
                       </a>
                       <p className="mt-1 text-xs italic text-pcWhite/50 font-pfFont">{getTitleFromUrl(graphicsgallery.asset.url)}</p>
                     </div>
@@ -2957,10 +2965,7 @@ export default function SingleProject() {
                       <div className="">
                         <a href={graphicsgallery.asset.url} target="_blank">
                           {" "}
-                          <img
-                            className="rounded-[8px]"
-                            src={resolveImage(graphicsgallery.asset.url)}
-                          />
+                          {renderGifItem(graphicsgallery.asset.url, "rounded-[8px]")}
                         </a>
                       </div>
                     </div>
@@ -2983,10 +2988,7 @@ export default function SingleProject() {
                       <div className="">
                         <a href={graphicsgallery.asset.url} target="_blank">
                           {" "}
-                          <img
-                            className="rounded-[8px]"
-                            src={resolveImage(graphicsgallery.asset.url)}
-                          />
+                          {renderGifItem(graphicsgallery.asset.url, "rounded-[8px]")}
                         </a>
                       </div>
                     </div>

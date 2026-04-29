@@ -286,6 +286,37 @@ export default function Home() {
     setAuthorData(fallbackAuthor);
   }, []);
 
+  useEffect(() => {
+    if (!projectData || loading) return;
+    const cards = Array.from(document.querySelectorAll(".scroll-fade-up"));
+    cards.forEach((el) => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(20px)";
+      el.style.transition = "opacity 0.5s ease-out, transform 0.5s ease-out";
+    });
+    const revealed = new Set();
+    const checkCards = () => {
+      cards.forEach((el) => {
+        if (revealed.has(el)) return;
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.92 && rect.bottom >= 0) {
+          const siblings = Array.from(el.parentElement.children).filter((c) =>
+            c.classList.contains("scroll-fade-up")
+          );
+          const idx = siblings.indexOf(el);
+          setTimeout(() => {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+          }, idx * 100);
+          revealed.add(el);
+        }
+      });
+    };
+    window.addEventListener("scroll", checkCards, { passive: true });
+    const raf = requestAnimationFrame(checkCards);
+    return () => { window.removeEventListener("scroll", checkCards); cancelAnimationFrame(raf); };
+  }, [projectData, loading]);
+
   if (!authorData || loading === true) {
     return (
       <motion.div
@@ -525,7 +556,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-[-240px] md:mt-0  lg:pt-12 2xl:px-[320px] lg:px-[80px] px-[16px]">
+        <div className="mt-[-240px] md:mt-0  lg:pt-12 2xl:px-[320px] xl:px-[80px] md:px-[40px] px-[16px]">
           <div>
             <div className="flex flex-wrap justify-center items-center min-h-[320px]  mb-10 ">
               <div className="relative mb-[-120px] md:mb-0 lg:mb-0 inline-flex lg:text-[96px] text-[64px] text-Black font-bold font-pfFont2 text-center drop-shadow-[0_0.4px_0.4px_#fff]  mix-blend-difference">
@@ -541,16 +572,16 @@ export default function Home() {
                 projectData.map((projectData, index) => {
                   return (
                   <div
-                    className={`md:min-h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden`}
+                    className={`h-[620px] md:h-[640px] w-full bg-white rounded-[16px] shadow-[0_0_20px_rgba(255,255,255,0.24)] overflow-hidden scroll-fade-up`}
                     key={index}
                   >
-                    <div className="relative">
+                    <div className="relative h-full">
                       <img
                         alt={projectData.projectHomeBanner.asset.url}
-                        className="md:h-full object-cover h-[620px] w-full"
+                        className="h-full object-cover w-full"
                         src={resolveImage(projectData.projectHomeBanner.asset.url)}
                       />
-                      <div className="absolute top-0 w-full md:min-h-[640px] p-6 md:p-12 rounded-[8px]">
+                      <div className="absolute inset-0 p-6 xl:p-12 rounded-[8px]">
                         {/* <img
                     className="w-[40px]"
                     src={resolveImage(projectData.projectLogo.asset.url)}

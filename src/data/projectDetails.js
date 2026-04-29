@@ -871,14 +871,14 @@ const projectDetails = {
       "alt": null,
       "asset": {
         "_id": "image-a94278915b024e45f425b9497744feb2a3e7cf9a-1920x1291-jpg",
-        "url": "/datagotech/Colors.jpg"
+        "url": "/datagotech/datagoTechDesignSystem.png"
       }
     },
     "designSystemImage2": {
       "alt": null,
       "asset": {
         "_id": "image-71412869288c601b20f7c9f4ee45497f592c5869-3840x4320-png",
-        "url": "/datagotech/Colors_dark.jpg"
+        "url": "/datagotech/Icons & Logo.jpg"
       }
     },
     "designSystemTitle": null,
@@ -1013,14 +1013,14 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-4e055e7c65bf302cb1efdc16422922fa0042e0c9-1401x1648-png",
-          "url": "/datagotech/Components1.jpg"
+          "url": "/datagotech/search_result_v3.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-b11ab9b5a2018057df6fdba0be018c0a0c898096-1401x1898-png",
-          "url": "/datagotech/Components2.jpg"
+          "url": "/datagotech/search_result_v3-2.png"
         }
       }
     ],
@@ -1029,28 +1029,28 @@ const projectDetails = {
         "alt": null,
         "asset": {
           "_id": "image-9736866552b09d7d8e649b8ae612a57576459a9b-3840x3050-png",
-          "url": "/datagotech/Components3.jpg"
+          "url": "/datagotech/searchedResult.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-d4740b85df09ce955c805dc9cd952ddad94eb13d-3840x3050-png",
-          "url": "/datagotech/Frame 261.jpg"
+          "url": "/datagotech/searchedResult_new.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-1bb635e667fdd3ce92a68048818a019b0935486b-3840x1920-png",
-          "url": "/datagotech/Icons & Logo.jpg"
+          "url": "/datagotech/filter.png"
         }
       },
       {
         "alt": null,
         "asset": {
           "_id": "image-449793d567932a312f02cfab6563e4ce884db42f-3840x1920-png",
-          "url": "/datagotech/Icons & Logo_dark.jpg"
+          "url": "/datagotech/filter_new.png"
         }
       }
     ],
@@ -1060,7 +1060,8 @@ const projectDetails = {
     "extraGallery6": null,
     "extraGallery7": null,
     "extraGallery8": null,
-    "extraImage1": {
+    "extraImage1": null,
+    "extraImage1_unused": {
       "alt": null,
       "asset": {
         "_id": "image-44e4fc71309ce3455de0121b5614450311621eb6-3840x1844-png",
@@ -1166,13 +1167,13 @@ const projectDetails = {
       {
         "asset": {
           "_id": "file-8b90d2f8111137d87e31432213a8d87226ab7b42-png",
-          "url": "/datagotech/Preference (Display).png"
+          "url": "/datagotech/redgreenswitcher.png"
         }
       },
       {
         "asset": {
           "_id": "file-ee0093d4389649f363158ef03f2cb402e18117ac-png",
-          "url": "/datagotech/Typography-1.jpg"
+          "url": "/datagotech/Preference (Display).png"
         }
       }
     ],
@@ -1297,7 +1298,7 @@ const projectDetails = {
     "projectBanner": {
       "asset": {
         "_id": "image-06548c4f4c8b9168db8a001a6932265c7337d923-3840x2160-jpg",
-        "url": "/datagotech/Typography.jpg"
+        "url": "/datagotech/datagotech.jpg"
       }
     },
     "projectButtonColor": "#8DCAFF",

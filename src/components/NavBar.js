@@ -38,7 +38,7 @@ export default function NavBar() {
   console.log(authorData);
   return (
     <header className="sticky top-0 z-50">
-      <motion.div className="px-[24px] md:px-[36px] 2xl:px-[320px] lg:px-[80px] flex flex-wrap justify-between items-center mx-auto py-4 md:py-8 text-[18px] font-pfFont2 font-semibold bg-pcBlack">
+      <motion.div className="px-[24px] md:px-[40px] xl:px-[80px] 2xl:px-[320px] flex flex-wrap justify-between items-center mx-auto py-4 text-[18px] font-pfFont2 font-semibold bg-pcBlack">
         <div className="z-50">
           <a href="/" className="flex items-center">
             <span className="text-2xl self-center font-semibold whitespace-nowrap text-pcWhite hover:text-pcWhite transition-all ease-in-out duration-100">
@@ -61,7 +61,7 @@ export default function NavBar() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ x: "-100vw", borderRadius: 0, width: "150vw" }}
+              initial={{ x: "100vw", borderRadius: 0, width: "150vw" }}
               animate={{
                 x: 0,
                 width: "100vw",
@@ -69,36 +69,39 @@ export default function NavBar() {
                 transition: { ease: "linear", duration: 0.3 },
               }}
               exit={{
-                x: "-100vw",
+                x: "100vw",
                 borderRadius: 0,
                 transition: { ease: "linear", duration: 0.3 },
               }}
               className="absolute w-full bg-pcBlack right-0 h-screen top-0 block md:hidden z-40"
             >
               <motion.div
-                initial={{ y: 0, scale: 0, x: -100 }}
+                initial={{ y: 0, scale: 0, x: 100 }}
                 animate={{
                   y: 0,
                   scale: 1,
-                  x: [-400, 0],
+                  x: [400, 0],
                   transition: { duration: 0.5 },
                 }}
                 className="absolute inset-0 text-pcWhite flex flex-col justify-center items-center"
               >
                 <NavLink
                   to="/"
+                  onClick={() => { window.location.href = '/'; }}
                   className="font-semibold text-[36px] text-pcWhite relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[24px] after:absolute after:duration-300 hover:after:w-full"
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/Projects"
+                  onClick={() => { window.location.href = '/Projects'; }}
                   className="my-4 font-semibold text-[36px] text-pcWhite relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[24px] after:absolute after:duration-300 hover:after:w-full"
                 >
                   Project Archive
                 </NavLink>
                 <NavLink
                   to="/AboutMe"
+                  onClick={() => { window.location.href = '/AboutMe'; }}
                   className="font-semibold text-[36px] text-pcWhite relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[24px] after:absolute after:duration-300 hover:after:w-full"
                 >
                   About Me
@@ -112,6 +115,7 @@ export default function NavBar() {
           <div className="hidden md:block">
           <NavLink
               to="/"
+              onClick={() => { window.location.href = '/'; }}
               className="text-pcWhite relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[10px] after:absolute after:duration-300 hover:after:w-full"
             >
               Home
@@ -119,6 +123,7 @@ export default function NavBar() {
             <span className="whitespace-pre">        </span>
             <NavLink
               to="/Projects"
+              onClick={() => { window.location.href = '/Projects'; }}
               className="text-pcWhite relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[10px] after:absolute after:duration-300 hover:after:w-full"
             >
               Project Archive
@@ -139,6 +144,7 @@ export default function NavBar() {
             </NavLink> */}
             <NavLink
               to="/AboutMe"
+              onClick={() => { window.location.href = '/AboutMe'; }}
               className=" text-pcWhite relative duration-300 after:content-[''] after:bg-pcWhite after:h-[2px] after:w-0 after:left-0 after:bottom-[10px] after:absolute after:duration-300 hover:after:w-full"
             >
               About Me

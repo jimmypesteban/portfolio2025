@@ -228,7 +228,7 @@ export const homepageProjects = [
     slug: { _type: "slug", current: "datagotech" },
     liveSite: "https://www.datagotech.cn/portal",
     externalLink: null,
-    projectHomeBanner: { alt: null, asset: { url: "/datagotech/homepage_new.png" } },
+    projectHomeBanner: { alt: null, asset: { url: "/datagotech/DatagoTechHomeCover.png" } },
     projectTags: ["UI Design", "UX Design", "Design System", "Risk Management"],
     publishedAt: null,
   },

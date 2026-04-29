@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { resolveImage } from "../utils/resolveImage";
 import { Link } from "react-router-dom";
 // import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { animate, motion } from "framer-motion";
@@ -329,7 +330,7 @@ export default function Home() {
         <div
           className="fixed inset-0 bg-repeat -z-10"
           style={{
-            backgroundImage:`url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
+            backgroundImage:`url(/images/Grids3.webp)`,
           }}
         />
 
@@ -516,7 +517,7 @@ export default function Home() {
                 <img
                   alt={authorData.homeBanner.asset.url}
                   className="w-full h-[calc(100vh-100px)]"
-                  src={authorData.homeBanner.asset.url}
+                  src={resolveImage(authorData.homeBanner.asset.url)}
                 />
               </div>
             )} */}
@@ -547,12 +548,12 @@ export default function Home() {
                       <img
                         alt={projectData.projectHomeBanner.asset.url}
                         className="md:h-full object-cover h-[620px] w-full"
-                        src={projectData.projectHomeBanner.asset.url}
+                        src={resolveImage(projectData.projectHomeBanner.asset.url)}
                       />
                       <div className="absolute top-0 w-full md:min-h-[640px] p-6 md:p-12 rounded-[8px]">
                         {/* <img
                     className="w-[40px]"
-                    src={projectData.projectLogo.asset.url}
+                    src={resolveImage(projectData.projectLogo.asset.url)}
                   /> */}
 
                         <p

@@ -24,7 +24,13 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 
-# Large files exceeding GitHub's 100MB limit
-public/trials/Login.gif
-public/trials/ShowHideColumns_Trials.gif
-public/datagotech/Frame 261.jpg
+# Original images — webp versions are served instead
+public/images/**/*.jpg
+public/images/**/*.jpeg
+public/images/**/*.JPG
+public/images/**/*.png
+public/images/**/*.PNG
+
+# Oversized gifs exceeding GitHub's 100MB limit
+public/images/trials/Login.gif
+public/images/trials/ShowHideColumns_Trials.gif

@@ -1,5 +1,6 @@
 import "./styles.css";
 import React, { useState, useEffect } from "react";
+import { resolveImage } from "../utils/resolveImage";
 import { useParams } from "react-router-dom";
 // import sanityClient from "../client.js"; // Static data (Sanity removed)
 import BlockContent from "@sanity/block-content-to-react";
@@ -194,7 +195,7 @@ export default function SingleProject() {
             initial={{ scale: 1.0, y: "10%" }}
             animate={{ y: 0, duration: 0.5, ease: "easeInOut" }}
             className="object-center"
-            src={singleProjectData.projectBanner.asset.url}
+            src={resolveImage(singleProjectData.projectBanner.asset.url)}
             alt={singleProjectData.name}
           />
         </div>
@@ -275,7 +276,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -285,7 +286,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className=""
-                  src={singleProjectData.extraImage2.asset.url}
+                  src={resolveImage(singleProjectData.extraImage2.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -321,7 +322,7 @@ export default function SingleProject() {
 <div>
                 <img
                   className=""
-                  src={singleProjectData.extraImage3.asset.url}
+                  src={resolveImage(singleProjectData.extraImage3.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -329,7 +330,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className="pt-8"
-                  src={singleProjectData.extraImage1.asset.url}
+                  src={resolveImage(singleProjectData.extraImage1.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -342,7 +343,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -371,7 +372,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className="mt-4"
-                  src={singleProjectData.designSystemImage.asset.url}
+                  src={resolveImage(singleProjectData.designSystemImage.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -399,7 +400,7 @@ export default function SingleProject() {
                   singleProjectData.extraGallery7.map((graphicsgallery, index) => (
                     <a href={graphicsgallery.asset.url} target="_blank">
                       {" "}
-                      <img className="w-full" src={graphicsgallery.asset.url} />
+                      <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
                     </a>
                   ))}
               </div>
@@ -458,7 +459,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <a href={graphicsgallery.asset.url} target="_blank">
                       {" "}
-                      <img className="w-full" src={graphicsgallery.asset.url} />
+                      <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
                     </a>
                   ))}
               </div>
@@ -484,7 +485,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -512,7 +513,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -540,7 +541,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -576,7 +577,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -604,7 +605,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -694,7 +695,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -747,7 +748,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className="pb-4 md:pb-8"
-                  src={singleProjectData.designSystemImage.asset.url}
+                  src={resolveImage(singleProjectData.designSystemImage.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -755,7 +756,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className=""
-                  src={singleProjectData.designSystemImage2.asset.url}
+                  src={resolveImage(singleProjectData.designSystemImage2.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -791,7 +792,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -801,7 +802,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className="mt-4"
-                  src={singleProjectData.extraImage1.asset.url}
+                  src={resolveImage(singleProjectData.extraImage1.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -826,7 +827,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -903,7 +904,7 @@ export default function SingleProject() {
                           className={`${
                             (index + 1) % 2 == 0 ? "w-1/2" : "w-full"
                           }`}
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     </div>
@@ -922,7 +923,7 @@ export default function SingleProject() {
                     >
                       <img
                         className="rounded-[24px] p-6"
-                        src={graphicsgallery.asset.url}
+                        src={resolveImage(graphicsgallery.asset.url)}
                         alt={graphicsgallery.alt}
                       />
                     </div>
@@ -1013,7 +1014,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-[50px]"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       </div>
@@ -1068,7 +1069,7 @@ export default function SingleProject() {
                             className={`${
                               (index + 1) % 2 == 0 ? "w-1/2" : "w-full"
                             }`}
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       </div>
@@ -1087,7 +1088,7 @@ export default function SingleProject() {
                     >
                       <img
                         className="rounded-[24px] p-6"
-                        src={graphicsgallery.asset.url}
+                        src={resolveImage(graphicsgallery.asset.url)}
                         alt={graphicsgallery.alt}
                       />
                     </div>
@@ -1178,7 +1179,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-[50px]"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       </div>
@@ -1296,7 +1297,7 @@ export default function SingleProject() {
               <div>
                 <img
                   className="pb-4 md:pb-8"
-                  src={singleProjectData.extraImage1.asset.url}
+                  src={resolveImage(singleProjectData.extraImage1.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -1308,7 +1309,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -1317,12 +1318,12 @@ export default function SingleProject() {
               <div className="">
                 <img
                   className="pb-4 md:pb-8"
-                  src={singleProjectData.extraImage2.asset.url}
+                  src={resolveImage(singleProjectData.extraImage2.asset.url)}
                   alt={singleProjectData.name}
                 />
                 <img
                   className=""
-                  src={singleProjectData.extraImage3.asset.url}
+                  src={resolveImage(singleProjectData.extraImage3.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -1349,7 +1350,7 @@ export default function SingleProject() {
                 {singleProjectData.designSystemGallery &&
                   singleProjectData.designSystemGallery.map((img, index) => (
                     <a key={index} href={img.asset.url} target="_blank">
-                      <img className="w-full" src={img.asset.url} />
+                      <img className="w-full" src={resolveImage(img.asset.url)} />
                     </a>
                   ))}
               </div>
@@ -1431,7 +1432,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -1454,7 +1455,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -1477,7 +1478,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -1500,7 +1501,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -1523,7 +1524,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -1546,7 +1547,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -1604,7 +1605,7 @@ export default function SingleProject() {
                 <div className="flex justify-center">
                   <img
                     className="py-4 md:py-8"
-                    src={singleProjectData.extraImage1.asset.url}
+                    src={resolveImage(singleProjectData.extraImage1.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -1645,7 +1646,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -1663,7 +1664,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className="py-4 md:py-8"
-                  src={singleProjectData.extraImage2.asset.url}
+                  src={resolveImage(singleProjectData.extraImage2.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -1674,7 +1675,7 @@ export default function SingleProject() {
                       <a key={index} href={graphicsgallery.asset.url} target="_blank" className="bg-white rounded-[8px] p-6 flex items-center justify-center">
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -1695,7 +1696,7 @@ export default function SingleProject() {
                 <div className="flex justify-center mt-4">
                   <img
                     className=""
-                    src={singleProjectData.extraImage4.asset.url}
+                    src={resolveImage(singleProjectData.extraImage4.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -1712,7 +1713,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className=""
-                  src={singleProjectData.extraImage3.asset.url}
+                  src={resolveImage(singleProjectData.extraImage3.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -1743,7 +1744,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -1844,7 +1845,7 @@ export default function SingleProject() {
                 <div className="flex justify-center">
                   <img
                     className="pt-4"
-                    src={singleProjectData.processImage.asset.url}
+                    src={resolveImage(singleProjectData.processImage.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -1871,7 +1872,7 @@ export default function SingleProject() {
                 <div className="flex justify-center">
                   <img
                     className="pt-4 mb-8"
-                    src={singleProjectData.designSystemImage.asset.url}
+                    src={resolveImage(singleProjectData.designSystemImage.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -1888,7 +1889,7 @@ export default function SingleProject() {
                 <div className="flex justify-center">
                   <img
                     className="pt-4"
-                    src={singleProjectData.designSystemImage2.asset.url}
+                    src={resolveImage(singleProjectData.designSystemImage2.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -1955,7 +1956,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -1979,7 +1980,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2000,7 +2001,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2014,7 +2015,7 @@ export default function SingleProject() {
                       <a key={index} href={graphicsgallery.asset.url} target="_blank">
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2060,7 +2061,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className="pt-4 w-full"
-                  src={singleProjectData.processImage.asset.url}
+                  src={resolveImage(singleProjectData.processImage.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2089,7 +2090,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2117,7 +2118,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <a href={graphicsgallery.asset.url} target="_blank">
                       {" "}
-                      <img className="w-full" src={graphicsgallery.asset.url} />
+                      <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
                     </a>
                   ))}
               </div>
@@ -2146,7 +2147,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2172,7 +2173,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className="pt-4"
-                  src={singleProjectData.extraImage1.asset.url}
+                  src={resolveImage(singleProjectData.extraImage1.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2196,7 +2197,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className="md:pt-4 md:w-1/2 w-full"
-                  src={singleProjectData.extraImage2.asset.url}
+                  src={resolveImage(singleProjectData.extraImage2.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2212,7 +2213,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className=""
-                  src={singleProjectData.extraImage3.asset.url}
+                  src={resolveImage(singleProjectData.extraImage3.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2234,7 +2235,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2258,7 +2259,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2290,7 +2291,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2300,7 +2301,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className="pt-4"
-                  src={singleProjectData.extraImage4.asset.url}
+                  src={resolveImage(singleProjectData.extraImage4.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2325,7 +2326,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className="pt-4"
-                  src={singleProjectData.extraImage5.asset.url}
+                  src={resolveImage(singleProjectData.extraImage5.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2355,7 +2356,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2374,7 +2375,7 @@ export default function SingleProject() {
               <div className="flex justify-center">
                 <img
                   className=""
-                  src={singleProjectData.extraImage6.asset.url}
+                  src={resolveImage(singleProjectData.extraImage6.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2426,7 +2427,7 @@ export default function SingleProject() {
                 <div className="flex justify-center">
                   <img
                     className=""
-                    src={singleProjectData.processImage.asset.url}
+                    src={resolveImage(singleProjectData.processImage.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -2438,7 +2439,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="w-full"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       )
@@ -2484,7 +2485,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2527,7 +2528,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <a href={graphicsgallery.asset.url} target="_blank">
                       {" "}
-                      <img className="w-full" src={graphicsgallery.asset.url} />
+                      <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
                     </a>
                   ))}
               </div>
@@ -2559,7 +2560,7 @@ export default function SingleProject() {
               <div className="flex justify-center mt-4">
                 <img
                   className=""
-                  src={singleProjectData.extraImage2.asset.url}
+                  src={resolveImage(singleProjectData.extraImage2.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2572,7 +2573,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2608,7 +2609,7 @@ export default function SingleProject() {
               <div className="flex justify-center mt-4">
                 <img
                   className=""
-                  src={singleProjectData.extraImage3.asset.url}
+                  src={resolveImage(singleProjectData.extraImage3.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2638,7 +2639,7 @@ export default function SingleProject() {
               <div className="flex justify-center mt-4">
                 <img
                   className=""
-                  src={singleProjectData.extraImage4.asset.url}
+                  src={resolveImage(singleProjectData.extraImage4.asset.url)}
                   alt={singleProjectData.name}
                 />
               </div>
@@ -2689,7 +2690,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2721,7 +2722,7 @@ export default function SingleProject() {
                 <div className="flex justify-center mt-4 basis-1/2">
                   <img
                     className="md:w-2/3 w-full"
-                    src={singleProjectData.extraImage1.asset.url}
+                    src={resolveImage(singleProjectData.extraImage1.asset.url)}
                     alt={singleProjectData.name}
                   />
                 </div>
@@ -2731,7 +2732,7 @@ export default function SingleProject() {
                   singleProjectData.gifGallery.map((graphicsgallery, index) => (
                     <a href={graphicsgallery.asset.url} target="_blank">
                       {" "}
-                      <img className="w-full" src={graphicsgallery.asset.url} />
+                      <img className="w-full" src={resolveImage(graphicsgallery.asset.url)} />
                     </a>
                   ))}
               </div>
@@ -2753,7 +2754,7 @@ export default function SingleProject() {
                         {" "}
                         <img
                           className="w-full"
-                          src={graphicsgallery.asset.url}
+                          src={resolveImage(graphicsgallery.asset.url)}
                         />
                       </a>
                     )
@@ -2792,7 +2793,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="rounded-[8px]"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       </div>
@@ -2818,7 +2819,7 @@ export default function SingleProject() {
                           {" "}
                           <img
                             className="rounded-[8px]"
-                            src={graphicsgallery.asset.url}
+                            src={resolveImage(graphicsgallery.asset.url)}
                           />
                         </a>
                       </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { resolveImage } from "../utils/resolveImage";
 import { Link } from "react-router-dom";
 // import sanityClient from "../client.js"; // Static data (Sanity removed)
 import { AnimatePresence, motion } from "framer-motion";
@@ -107,7 +108,7 @@ export default function Projects() {
     <div
         className="bg-repeat"
         style={{
-          backgroundImage:`url(https://raw.githubusercontent.com/jimmypesteban/portfolio2023/main/src/images/Grids3.webp)`,
+          backgroundImage:`url(/images/Grids3.webp)`,
         }}
       >
       <section className="2xl:mx-[290px] mx-[16px] md:mx-[40px]">
@@ -166,7 +167,7 @@ export default function Projects() {
 
                       <img
                         className="rounded-t-[8px]"
-                        src={project.projectBanner.asset.url}
+                        src={resolveImage(project.projectBanner.asset.url)}
                         alt={project.projectBanner.alt}
                       />
 
@@ -249,7 +250,7 @@ export default function Projects() {
 
                       <img
                         className="rounded-t-[8px]"
-                        src={project.projectBanner.asset.url}
+                        src={resolveImage(project.projectBanner.asset.url)}
                         alt={project.projectBanner.alt}
                       />
 

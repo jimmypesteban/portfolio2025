@@ -24,8 +24,8 @@ export const authorData = {
   signature: {
     alt: null,
     asset: {
-      _id: "image-61c238c779936ac88854fd026543b19953b9be66-400x147-png",
-      url: "https://cdn.sanity.io/images/7vv89ze2/production/61c238c779936ac88854fd026543b19953b9be66-400x147.png",
+      _id: "local-signature",
+      url: "/images/signature.webp",
     },
   },
   homeBanner: {

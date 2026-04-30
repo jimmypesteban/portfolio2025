@@ -54,14 +54,14 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
 
         {/* Image + title */}
         <div
-          className="relative z-10 flex flex-col items-center"
+          className="relative z-10 flex flex-col items-center px-14"
           onClick={(e) => e.stopPropagation()}
         >
           {/\.mp4$/i.test(images[index].src) ? (
             <video
               key={index}
               src={images[index].src}
-              className="max-h-[70vh] md:max-h-[80vh] max-w-[85vw] object-contain rounded-[4px]"
+              className="max-h-[70vh] md:max-h-[80vh] max-w-full object-contain rounded-[4px]"
               autoPlay
               loop
               muted
@@ -72,65 +72,38 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
             <motion.img
               key={index}
               src={images[index].src}
-              className="max-h-[70vh] md:max-h-[80vh] max-w-[85vw] object-contain rounded-[4px] select-none"
+              className="max-h-[70vh] md:max-h-[80vh] max-w-full object-contain rounded-[4px] select-none"
               initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.15 }}
             />
           )}
           {images[index].title && (
-            <p className="mt-3 px-4 md:px-0 text-white/60 text-sm font-pfFont2 font-bold text-center max-w-[85vw] capitalize">
+            <p className="mt-3 text-white/60 text-sm font-pfFont2 font-bold text-center capitalize">
               {images[index].title}
             </p>
           )}
         </div>
 
-        {/* Arrows — side on desktop, below image on mobile */}
-        <div
-          className="relative z-10 flex items-center gap-4 mt-4 md:hidden"
-          onClick={(e) => e.stopPropagation()}
+        {/* Prev arrow — fixed to viewport left center */}
+        <button
+          className={`absolute left-2 md:left-4 z-10 p-3 bg-black/40 hover:bg-black/70 rounded-full text-white/70 hover:text-white transition-colors ${!hasPrev ? "opacity-30 pointer-events-none" : ""}`}
+          onClick={(e) => { e.stopPropagation(); onPrev(); }}
         >
-          <button
-            className={`p-3 bg-black/40 hover:bg-black/70 rounded-full text-white/70 hover:text-white transition-colors ${!hasPrev ? "opacity-30 pointer-events-none" : ""}`}
-            onClick={onPrev}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-          </button>
-          <button
-            className={`p-3 bg-black/40 hover:bg-black/70 rounded-full text-white/70 hover:text-white transition-colors ${!hasNext ? "opacity-30 pointer-events-none" : ""}`}
-            onClick={onNext}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
-        </div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
 
-        {/* Prev arrow — desktop only */}
-        {hasPrev && (
-          <button
-            className="hidden md:block absolute left-4 z-10 text-white/70 hover:text-white transition-colors p-3 bg-black/40 hover:bg-black/70 rounded-full"
-            onClick={(e) => { e.stopPropagation(); onPrev(); }}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-          </button>
-        )}
-
-        {/* Next arrow — desktop only */}
-        {hasNext && (
-          <button
-            className="hidden md:block absolute right-4 z-10 text-white/70 hover:text-white transition-colors p-3 bg-black/40 hover:bg-black/70 rounded-full"
-            onClick={(e) => { e.stopPropagation(); onNext(); }}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
-        )}
+        {/* Next arrow — fixed to viewport right center */}
+        <button
+          className={`absolute right-2 md:right-4 z-10 p-3 bg-black/40 hover:bg-black/70 rounded-full text-white/70 hover:text-white transition-colors ${!hasNext ? "opacity-30 pointer-events-none" : ""}`}
+          onClick={(e) => { e.stopPropagation(); onNext(); }}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </motion.div>
     </AnimatePresence>
   );

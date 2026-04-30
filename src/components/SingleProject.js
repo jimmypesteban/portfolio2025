@@ -129,15 +129,15 @@ export default function SingleProject() {
     if (!contentRef.current || !singleProjectData) return;
     const container = contentRef.current;
     const handleClick = (e) => {
-      const img = e.target.closest("img");
-      if (!img) return;
+      const media = e.target.closest("img") || e.target.closest("video");
+      if (!media) return;
       e.preventDefault();
-      const allImgs = Array.from(container.querySelectorAll("img"));
-      const index = allImgs.indexOf(img);
+      const allMedia = Array.from(container.querySelectorAll("img, video"));
+      const index = allMedia.indexOf(media);
       if (index === -1) return;
       setLightbox({
         open: true,
-        images: allImgs.map((el) => ({ src: el.src, title: getImageTitle(el) })),
+        images: allMedia.map((el) => ({ src: el.src, title: getImageTitle(el) })),
         index,
       });
     };

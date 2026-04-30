@@ -57,14 +57,27 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
           className="relative z-10 flex flex-col items-center"
           onClick={(e) => e.stopPropagation()}
         >
-          <motion.img
-            key={index}
-            src={images[index].src}
-            className="max-h-[70vh] md:max-h-[80vh] max-w-[85vw] object-contain rounded-[4px] select-none"
-            initial={{ opacity: 0, scale: 0.97 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.15 }}
-          />
+          {/\.mp4$/i.test(images[index].src) ? (
+            <video
+              key={index}
+              src={images[index].src}
+              className="max-h-[70vh] md:max-h-[80vh] max-w-[85vw] object-contain rounded-[4px]"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+            />
+          ) : (
+            <motion.img
+              key={index}
+              src={images[index].src}
+              className="max-h-[70vh] md:max-h-[80vh] max-w-[85vw] object-contain rounded-[4px] select-none"
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.15 }}
+            />
+          )}
           {images[index].title && (
             <p className="mt-3 px-4 md:px-0 text-white/60 text-sm font-pfFont2 font-bold text-center max-w-[85vw] capitalize">
               {images[index].title}
